@@ -1,0 +1,466 @@
+---
+title: Table of Contents
+sidebar:
+  order: 2
+  label: 2. Table of Contents
+---
+
+<!-- markdownlint-disable MD004 -->
+
+- The Comprehensive PHP Book
+  - Table of Contents
+  - Introduction
+    - About PHP
+    - Why PHP?
+    - PHP and the Web
+    - Modern PHP Development
+    - About This Book
+  - Getting Started with PHP
+    - Installation and Setup
+      - Installing PHP
+      - Web Server Configuration
+        - Apache
+        - Nginx
+      - PHP CLI
+    - Development Environment
+      - Local Development Setup
+      - Docker for PHP
+      - IDE and Editor Configuration
+    - PHP Configuration
+      - php.ini Configuration File
+        - Basic Setting
+        - Error Handling
+        - Performance Settings
+        - Security Settings
+      - Runtime Configuration
+      - Per-Directory Configuration
+  - PHP Fundamentals
+    - Basic Syntax
+    - PHP Tags
+    - Statements and Semicolons
+    - Comments
+    - Variables and Constants
+      - Variable Declaration
+      - Variable Scope
+        - Global
+        - Local
+        - Static
+      - Superglobals
+        - $\_GET, $\_POST, $\_REQUEST
+        - $\_SESSION
+        - $\_COOKIE
+        - $\_SERVER
+        - $\_ENV
+        - $\_FILES
+      - Constants
+        - define()
+        - const
+        - Magic Constants
+    - Data Types
+      - Scalar Types
+        - Integer
+        - Float (Double)
+        - String
+        - Boolean
+      - Compound Types
+        - Array
+        - Object
+        - Callable
+        - Iterable
+      - Special Types
+        - NULL
+        - Resource
+      - Type System
+        - Type Declarations (Type Hints)
+        - Strict Types
+        - Type Juggling
+        - Type Casting
+      - Operators
+        - Arithmetic Operators
+        - Assignment Operators
+        - Comparison Operators
+        - Increment/Decrement Operators
+        - Logical Operators
+        - String Operators
+        - Array Operators
+        - Null Coalescing Operator
+        - Spaceship Operator
+  - Control Structures
+    - Conditional Statements
+      - if, else, elseif
+      - switch
+      - match Expression (PHP 8+)
+    - Loops
+      - while
+      - do-while
+      - for
+      - foreach
+      - break and continue
+    - Alternative Syntax
+      - for Control Structures
+      - in Templates
+  - Functions
+    - Defining Functions
+    - Function Arguments
+      - Required Parameters
+      - Optional Parameters
+      - Default Values
+      - Variable-length Argument Lists
+      - Named Arguments (PHP 8+)
+    - Return Values
+      - Returning Values
+      - Returning References
+      - Void Return Type
+      - Never Return Type (PHP 8.1+)
+    - Variable Functions
+    - Anonymous Functions
+      - Closures
+      - Use Statement for Closures
+      - Arrow Functions (PHP 7.4+)
+    - Callbacks
+      - call_user_func()
+      - call_user_func_array()
+    - Built-in Functions
+      - String Functions
+      - Array Functions
+      - Math Functions
+      - Date/Time Functions
+  - Arrays
+    - Array Basics
+      - Indexed Arrays
+      - Associative Arrays
+      - Multidimensional Arrays
+    - Creating Arrays
+      - array() Syntax
+      - Short Array Syntax []
+    - Array Operations
+      - Accessing Elements
+      - Adding Elements
+      - Removing Elements
+      - Modifying Elements
+    - Array Functions
+      - Sorting Functions
+      - Filtering Functions
+      - Mapping Functions
+      - Reduction Functions
+      - Searching Functions
+      - Slicing and Splicing
+    - Array Iteration
+      - foreach Loop
+      - ArrayIterator
+      - Generator Functions
+  - Object-Oriented Programming in PHP
+    - Classes and Objects
+      - Class Declaration
+      - Object Instantiation
+      - Properties
+      - Methods
+      - $this Keyword
+    - Constructors and Destructors
+      - \_\_construct()
+      - \_\_destruct()
+      - Constructor Property Promotion (PHP 8+)
+    - Visibility
+      - public
+      - protected
+      - private
+      - Readonly Properties (PHP 8.1+)
+    - Inheritance
+      - extends Keyword
+      - parent Keyword
+      - Overriding Methods
+      - final Keyword
+    - Abstract Classes and Methods
+    - Interfaces
+      - Interface Declaration
+      - Implementing Interfaces
+      - Multiple Interface Implementation
+    - Traits
+      - Trait Declaration
+      - Using Traits
+      - Trait Conflicts and Resolution
+      - Trait Composition
+    - Static Members
+      - Static Properties
+      - Static Methods
+      - Late Static Binding
+    - Magic Methods
+      - **get() and **set()
+      - **isset() and **unset()
+      - **call() and **callStatic()
+      - \_\_toString()
+      - \_\_invoke()
+      - \_\_clone()
+      - **sleep() and **wakeup()
+      - **serialize() and **unserialize()
+    - Object Comparison
+    - Object Cloning
+    - Anonymous Classes
+  - Advanced OOP Concepts
+    - Type Declarations in OOP
+    - Class Type Hints
+    - Interface Type Hints
+    - Self and Parent Types
+    - Mixed Type (PHP 8+)
+    - Union Types (PHP 8+)
+    - Intersection Types (PHP 8.1+)
+    - Enumerations (PHP 8.1+)
+      - Basic Enums
+      - Backed Enums
+      - Enum Methods
+      - Enum Interfaces
+      - Enum Traits
+    - Class Constants
+      - Visibility for Constants
+    - Property Accessors
+      - **get() and **set()
+      - Custom Getter/Setter Methods
+    - Design Patterns
+      - Singleton
+      - Factory
+      - Strategy
+      - Observer
+      - Dependency Injection
+  - Error and Exception Handling
+    - Error Types
+      - Parse Errors
+      - Fatal Errors
+      - Warnings
+      - Notices
+    - Error Reporting Configuration
+    - Error Handling Functions
+      - set_error_handler()
+      - error_reporting()
+      - trigger_error()
+    - Exceptions
+      - Exception Class
+      - Custom Exceptions
+      - try-catch-finally
+      - Multiple Catch Blocks
+      - Exception Hierarchy
+      - Throw Expression (PHP 8+)
+    - Error Class (PHP 7+)
+      - TypeError
+      - ValueError
+      - ArithmeticError
+      - DivisionByZeroError
+  - Namespaces
+    - Namespace Basics
+      - Declaring Namespaces
+      - Using Namespaces
+      - Sub-namespaces
+    - The use Keyword
+      - Aliasing/Importing
+      - Group use Declarations
+    - Global Namespace
+      - Autoloading with Namespaces
+      - PSR-4 Autoloading
+    - Composer Autoloading
+  - Working with Files and Directories
+    - File System Functions
+      - Opening and Closing Files
+      - Reading Files
+      - Writing Files
+      - File Information
+    - Directory Functions
+      - Creating Directories
+      - Reading Directories
+      - Directory Iteration
+    - File Uploads
+      - $\_FILES Superglobal
+      - File Upload Configuration
+      - Security Considerations
+    - Streams
+      - Stream Contexts
+      - Stream Filters
+      - Stream Wrappers
+  - String Manipulation
+    - String Functions
+      - Searching and Replacing
+      - Formatting
+      - Encoding and Escaping
+      - Comparison
+    - Regular Expressions
+      - PCRE Functions
+      - Pattern Syntax
+      - Modifiers
+    - Multibyte String Functions
+      - mbstring Extension
+      - Character Encoding
+    - String Interpolation
+      - Variable Interpolation
+      - Complex Syntax
+  - Date and Time
+    - DateTime Class
+      - Creating DateTime Objects
+      - Formatting Dates
+      - Date Arithmetic
+      - Timezone Handling
+    - Date and Time Functions
+      - time()
+      - date()
+      - strtotime()
+      - getdate()
+    - DateInterval and DatePeriod
+    - Timezone Classes
+    - Carbon Library (Third-party)
+  - Web Development with PHP
+    - HTTP Basics
+      - Request/Response Cycle
+      - Headers
+      - Status Codes
+    - Forms Processing
+      - GET vs POST
+      - Form Validation
+      - File Uploads
+    - Sessions
+      - Starting Sessions
+      - Session Variables
+      - Session Configuration
+      - Session Security
+    - Cookies
+      - Setting Cookies
+      - Reading Cookies
+      - Cookie Security
+    - Headers and Output Buffering
+    - HTTP Authentication
+    - CORS (Cross-Origin Resource Sharing)
+  - Database Integration
+    - PDO (PHP Data Objects)
+    - PDO Connection
+    - Prepared Statements
+    - Transactions
+    - Error Handling
+    - MySQLi
+    - Procedural Style
+    - Object-Oriented Style
+    - Prepared Statements
+    - Multiple Statements
+    - Database Design Patterns
+    - Active Record
+    - Data Mapper
+    - Repository Pattern
+    - ORM (Object-Relational Mapping)
+    - Doctrine
+    - Eloquent (Laravel)
+  - Security
+    - Input Validation and Sanitization
+      - Filter Functions
+      - HTML Special Characters
+      - Regular Expressions
+    - SQL Injection Prevention
+    - Cross-Site Scripting (XSS)
+    - Cross-Site Request Forgery (CSRF)
+    - Session Security
+    - Password Hashing
+      - password_hash()
+      - password_verify()
+    - HTTPS and SSL/TLS
+    - Security Headers
+    - File Upload Security
+  - Performance and Optimization
+    - Opcode Caching
+      - OPcache
+      - APC
+    - Profiling PHP Applications
+      - Xdebug
+      - Blackfire
+    - Memory Management
+    - Database Optimization
+    - Caching Strategies
+      - Memcached
+      - Redis
+      - APCu
+  - Composer and Dependency Management
+    - Composer Basics
+      - Installation
+        - composer.json
+        - composer.lock
+      - Autoloading with Composer
+      - Packages and Versions
+      - Creating Packages
+      - Private Repositories
+      - Scripts and Events
+  - Testing in PHP
+  - PHPUnit
+    - Installation
+    - Writing Tests
+    - Assertions
+    - Data Providers
+    - Mocking
+    - Test-Driven Development (TDD)
+      - Behavior-Driven Development
+        - Behat
+      - Code Coverage
+      - Continuous Integration
+  - Modern PHP Features
+    - PHP 7.x Features
+      - Scalar Type Declarations
+      - Return Type Declarations
+      - Null Coalescing Operator
+      - Spaceship Operator
+      - Anonymous Classes
+      - Generator Return Expressions
+    - PHP 8.0 Features
+      - Named Arguments
+      - Attributes
+      - Constructor Property Promotion
+      - Union Types
+      - Match Expression
+      - Nullsafe Operator
+      - JIT Compilation
+    - PHP 8.1 Features
+      - Enumerations
+      - Readonly Properties
+      - First-class Callable Syntax
+      - New in Initializers
+      - Pure Intersection Types
+      - Never Return Type
+    - PHP 8.2 Features
+      - Readonly Classes
+      - Disjunctive Normal Form Types
+      - Standalone Types
+      - Constants in Traits
+      - Sensitive Parameter Redaction
+  - Frameworks and Libraries
+    - Popular PHP Frameworks
+      - Laravel
+      - Symfony
+      - CodeIgniter
+      - CakePHP
+      - Yii
+    - Micro-frameworks
+      - Slim
+      - Lumen
+      - Laminas (formerly Zend)
+    - Template Engines
+      - Twig
+      - Blade
+      - Smarty
+  - APIs and Web Services
+    - RESTful APIs
+      - Design Principles
+      - Implementation
+      - Versioning
+      - Documentation (OpenAPI/Swagger)
+    - SOAP Web Services
+    - GraphQL
+      - Implementation
+      - Tools and Libraries
+    - Authentication and Authorization
+      - API Keys
+      - OAuth 2.0
+      - JWT (JSON Web Tokens)
+  - Deployment and DevOps
+    - Deployment Strategies
+    - Server Configuration
+      - Apache
+      - Nginx
+      - PHP-FPM
+    - Containerization
+      - Docker
+      - Kubernetes
+    - Continuous Integration/Deployment
+    - Monitoring and Logging
+
+        <!--     markdownlint-enable MD004 -->

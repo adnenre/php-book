@@ -1,8 +1,8 @@
 ---
 title: "Modern PHP Development"
 sidebar:
-  order: 6
-  label: 6. modern-php-development
+  order: 7
+  label: 7. Modern PHP Development
 ---
 
 PHP has evolved significantly, adopting modern development practices that enhance productivity, maintainability, and code quality. Here's what modern PHP development looks like.

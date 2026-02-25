@@ -1,12 +1,14 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import tailwindcss from "@tailwindcss/vite";
+//import tailwindcss from "@tailwindcss/vite";
+import starlightThemeNova from "starlight-theme-nova";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
+      plugins: [starlightThemeNova(/* options */)],
       title: "PHP BOOK",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/adnenre/php-book" }],
       sidebar: [
@@ -76,10 +78,9 @@ export default defineConfig({
           autogenerate: { directory: "Performance-and-Optimization" },
         },
       ],
-      customCss: ["./src/styles/global.css"],
+      expressiveCode: {
+        themes: ["nord"], // Use Nord theme for all code blocks
+      },
     }),
   ],
-  vite: {
-    plugins: [tailwindcss()],
-  },
 });

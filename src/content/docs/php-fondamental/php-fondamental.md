@@ -17,7 +17,7 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 
 **Standard Tags (Recommended)**
 
-```shell
+```php
 <?php
     // PHP code goes here
     echo "Hello, World!";
@@ -27,7 +27,7 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 
 **Short Tags (Not Always Available)**
 
-```shell
+```php
 <?
     // PHP code (requires short_open_tag enabled in php.ini)
     echo "Short tag example";
@@ -36,14 +36,14 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 
 **Echo Tags**
 
-```shell
+```php
 <?= "This is shorthand for echo" ?>
 
 ```
 
 **ASP Style Tags (Deprecated)**
 
-```shell
+```php
 
 <%
     // ASP style (rarely used, requires configuration)
@@ -59,7 +59,7 @@ PHP statements are instructions that perform actions. Each statement typically e
 
 **Examples:**
 
-```shell
+```php
 <?php
     echo "Hello World";  // Statement 1
     $name = "John";      // Statement 2
@@ -80,7 +80,7 @@ Forgetting semicolons causes parse errors
 
 Example of Error:
 
-```shell
+```php
 <?php
     echo "Hello"  // Missing semicolon - will cause error
     echo "World";
@@ -93,7 +93,7 @@ Comments are non-executable text that helps document code. PHP supports several 
 
 **Single-line Comments:**
 
-```shell
+```php
 <?php
     // This is a single-line comment
     # This is also a single-line comment (shell style)
@@ -104,7 +104,7 @@ Comments are non-executable text that helps document code. PHP supports several 
 
 **Multi-line Comments:**
 
-```shell
+```php
 <?php
     /*
      * This is a multi-line comment
@@ -123,7 +123,7 @@ Comments are non-executable text that helps document code. PHP supports several 
 
 **DocBlock Comments (for documentation):**
 
-```shell
+```php
 <?php
     /**
      * Calculates the sum of two numbers
@@ -143,7 +143,7 @@ Comments are non-executable text that helps document code. PHP supports several 
 **Variable Declaration**
 Variables in PHP start with a dollar sign ($) followed by the variable name.
 
-```shell
+```php
 <?php
     $name = "Alice";      // String variable
     $age = 30;            // Integer variable
@@ -168,7 +168,7 @@ Variables in PHP start with a dollar sign ($) followed by the variable name.
 
 Constants are like variables but cannot be changed once defined.
 
-```shell
+```php
 <?php
     // Defining constants
     define("SITE_NAME", "My Website");
@@ -197,7 +197,7 @@ Variable scope determines where a variable can be accessed within your code.
 
 Variables declared within a function have local scope.
 
-```shell
+```php
 <?php
     function testFunction() {
         $localVar = "I'm local";  // Only accessible inside this function
@@ -213,7 +213,7 @@ Variables declared within a function have local scope.
 
 Variables declared outside any function have global scope.
 
-```shell
+```php
 <?php
     $globalVar = "I'm global";  // Accessible anywhere
 
@@ -236,7 +236,7 @@ Variables declared outside any function have global scope.
 
 Static variables retain their value between function calls.
 
-```shell
+```php
 <?php
     function counter() {
         static $count = 0;  // Static variable
@@ -255,7 +255,7 @@ Static variables retain their value between function calls.
 
 **Scope Example Summary:**
 
-```shell
+```php
 <?php
     $global = "Global variable";
 

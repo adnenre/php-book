@@ -9,7 +9,7 @@ A primitive data type refers to a basic data type that is built directly into th
 
 ### 1 - boolean
 
-```shell
+```php
 <?php
 
 // The boolean data type stores a binary value, either true or false
@@ -20,7 +20,7 @@ $isComplete = false;
 
 ### 2 - integer
 
-```shell
+```php
 <?php
 
 
@@ -35,7 +35,7 @@ $binary = 0b1010;         // Binary starts with 0b
 
 ### 3 - String
 
-```shell
+```php
 <?php
 
 // The string primitive type stores textual data
@@ -55,7 +55,7 @@ multi-line string";
 
 ## 4 - float (double)
 
-```shell
+```php
 <?php
 
 // Float data type represents floating-point numbers
@@ -67,7 +67,7 @@ $negativeFloat = -2.5;
 
 ### 5 - Array
 
-```shell
+```php
 <?php
 
 // Arrays can store multiple values of different types
@@ -95,7 +95,7 @@ $multiDim = [
 
 ### 6 - Null
 
-```shell
+```php
 <?php
 
 // null represents a variable with no value
@@ -105,7 +105,7 @@ $nullVar = null;
 
 ### Type checking and conversion
 
-```shell
+```php
 <?php
 // Type checking functions
 

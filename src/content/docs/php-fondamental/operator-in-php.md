@@ -1,15 +1,15 @@
 ---
 title: Operators in PHP
 sidebar:
-    order: 11
-    label: 11. Operators in PHP
+  order: 11
+  label: 11. Operators in PHP
 ---
 
 ### Arithmetic Operators
 
 Used for basic mathematical operations:
 
-```shell
+```php
 <?php
 $a = 10;
 $b = 3;
@@ -26,7 +26,7 @@ echo $a ** $b; // 1000 - Exponentiation (PHP 5.6+)
 
 Used to assign values to variables:
 
-```shell
+```php
 <?php
 $x = 10;     // Basic assignment
 $x += 5;     // $x = $x + 5 → 15
@@ -42,7 +42,7 @@ $x **= 2;    // $x = $x ** 2 → 1
 
 Used to compare two values:
 
-```shell
+```php
 <?php
 $a = 5;
 $b = "5";
@@ -68,7 +68,7 @@ echo 2 <=> 1; // 1  - Greater than
 
 Used to combine conditional statements:
 
-```shell
+```php
 <?php
 $age = 25;
 $hasLicense = true;
@@ -98,7 +98,7 @@ if ($age >= 18 xor $hasLicense) { } // XOR (exclusive OR)
 
 Used for string manipulation:
 
-```shell
+```php
 <?php
 $str1 = "Hello";
 $str2 = "World";
@@ -112,7 +112,7 @@ Increment/Decrement Operators
 Used to increase or decrease values:
 ```
 
-```shell
+```php
 <?php
 $x = 5;
 
@@ -127,7 +127,7 @@ echo $x--; // 6 - Post-decrement (then $x becomes 5)
 
 Used to work with arrays:
 
-```shell
+```php
 <?php
 $arr1 = [1, 2];
 $arr2 = [3, 4];
@@ -148,7 +148,7 @@ var_dump($arr1 !== $arr2); // true - Not identical
 
 Short conditional assignment:
 
-```shell
+```php
 <?php
 $age = 20;
 $status = ($age >= 18) ? "Adult" : "Minor";
@@ -157,14 +157,14 @@ echo $status; // "Adult"
 
 ### Shorthand ternary (PHP 5.3+)
 
-```shell
+```php
 $name = "";
 $displayName = $name ?: "Guest"; // "Guest"
 Null Coalescing Operator (PHP 7+)
 Checks if value exists and is not null:
 ```
 
-```shell
+```php
 <?php
 $username = $_GET['user'] ?? 'guest'; // If user doesn't exist, use 'guest'
 
@@ -178,7 +178,7 @@ $array['key'] ??= 'default'; // Only sets if key doesn't exist
 
 Used for type checking:
 
-```shell
+```php
 <?php
 class MyClass {}
 $obj = new MyClass();
@@ -197,7 +197,7 @@ var_dump($child instanceof ParentClass); // true
 
 Executes shell commands:
 
-```shell
+```php
 <?php
 $output = `ls -la`; // Backticks, not single quotes
 echo $output;

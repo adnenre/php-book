@@ -13,7 +13,7 @@ The $\_GET superglobal is an associative array of variables passed to the curren
 
 Basic Usage:
 
-```shell
+```php
 <?php
 // URL: http://example.com/page.php?id=123&name=John
 
@@ -34,7 +34,7 @@ if (isset($_GET['search'])) {
 
 **Security Considerations:**
 
-```shell
+```php
 <?php
 // Always validate and sanitize GET data
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0; // Convert to integer
@@ -57,7 +57,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 **Example Form:**
 **HTML**
 
-```shell
+```php
 <!-- form.html -->
 <form action="process.php" method="get">
     <input type="text" name="search" placeholder="Search...">
@@ -86,7 +86,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
 **Basic Usage:**
 **php**
 
-```shell
+```php
 <?php
 // Check if form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -106,7 +106,7 @@ $age = isset($_POST['age']) ? $_POST['age'] : 'Not provided';
 
 **Security Best Practices:**
 
-```shell
+```php
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Sanitize inputs
@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 **Example Registration Form:**
 php
 
-```shell
+```php
 <!-- register.php -->
 <?php
 $errors = [];
@@ -195,7 +195,7 @@ The $\_REQUEST superglobal contains the contents of $\_GET, $\_POST, and $\_COOK
 
 Usage (with caution):
 
-```shell
+```php
 
 <?php
 // Not recommended for most cases due to ambiguity
@@ -223,7 +223,7 @@ The $\_SESSION superglobal is used to store session variables that persist acros
 
 **Basic Usage:**
 
-```shell
+```php
 <?php
 // Always start session at the beginning
 session_start();
@@ -252,7 +252,7 @@ session_destroy();
 
 **Complete Login System Example:**
 
-```shell
+```php
 
 <?php
 session_start();
@@ -301,7 +301,7 @@ exit;
 
 **Session Security Tips:**
 
-```shell
+```php
 <?php
 // Secure session configuration
 ini_set('session.cookie_httponly', 1);
@@ -335,7 +335,7 @@ The $\_COOKIE superglobal contains variables passed to the current script via HT
 
 **Basic Usage:**
 
-```shell
+```php
 <?php
 // Set a cookie (must be before any output)
 $cookie_name = "user";
@@ -371,7 +371,7 @@ setcookie("user", "", time() - 3600, "/");
 
 **Example: Remember Me Functionality:**
 
-```shell
+```php
 
 <?php
 // Set remember me cookie
@@ -420,7 +420,7 @@ The $\_SERVER superglobal contains information about the server and execution en
 
 **Common $\_SERVER Elements:**
 
-```shell
+```php
 <?php
 echo "Server Information:<br>";
 echo "Server Name: " . $_SERVER['SERVER_NAME'] . "<br>";
@@ -451,7 +451,7 @@ echo "HTTP Referer: " . ($_SERVER['HTTP_REFERER'] ?? 'Not set') . "<br>";
 
 **Practical Examples:**
 
-```shell
+```php
 
 <?php
 // Redirect based on HTTPS
@@ -505,7 +505,7 @@ The $\_ENV superglobal contains environment variables. These are typically set i
 
 **Basic Usage:**
 
-```shell
+```php
 <?php
 // Access environment variables
 $db_host = $_ENV['DB_HOST'] ?? 'localhost';
@@ -526,7 +526,7 @@ echo "Temporary Directory: " . ($_ENV['TMPDIR'] ?? sys_get_temp_dir()) . "<br>";
 
 **Using .env Files (with vlucas/phpdotenv):**
 
-```shell
+```php
 <?php
 // Install via: composer require vlucas/phpdotenv
 
@@ -553,7 +553,7 @@ The $\_FILES superglobal contains items uploaded via HTTP POST method with encty
 
 **Basic Structure of $\_FILES:**
 
-```shell
+```php
 Array
 (
 [avatar] => Array
@@ -570,7 +570,7 @@ Array
 **_File Upload Example:_**
 php
 
-```shell
+```php
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['avatar'])) {
     $file = $_FILES['avatar'];
@@ -621,7 +621,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['avatar'])) {
 
 **Multiple File Upload:**
 
-```shell
+```php
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_FILES['photos'])) {
     $files = $_FILES['photos'];
@@ -653,7 +653,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_FILES['photos'])) {
 
 **File Upload Security Tips:**
 
-```shell
+```php
 <?php
 function handleFileUpload($field_name, $options = []) {
     $defaults = [
@@ -738,7 +738,7 @@ Use HTTPS for sensitive data transmission
 
 **Input Validation Example:**
 
-```shell
+```php
 
 <?php
 function validateInput($input, $type = 'string', $options = []) {

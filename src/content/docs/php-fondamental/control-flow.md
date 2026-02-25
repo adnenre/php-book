@@ -11,7 +11,7 @@ Control flow structures allow you to control the execution of code in your PHP p
 
 1. If, Elseif, Else
 
-```shell
+```php
 <?php
 $age = 20;
 $hasLicense = true;
@@ -48,7 +48,7 @@ if ($age >= 18 && $hasLicense) {
 
 2. Switch Statement
 
-```shell
+```php
 <?php
 $day = "Monday";
 
@@ -84,7 +84,7 @@ switch (true) {
 
 3. Match Expression (PHP 8+)
 
-```shell
+```php
 <?php
 $statusCode = 404;
 
@@ -112,7 +112,7 @@ $category = match (true) {
 
 1. For Loop
 
-```shell
+```php
 <?php
 // Basic for loop
 for ($i = 0; $i < 5; $i++) {
@@ -135,7 +135,7 @@ for (;;) {
 
 2. While Loop
 
-```shell
+```php
 <?php
 // Pre-condition check
 $counter = 0;
@@ -154,7 +154,7 @@ while (!empty($data)) {
 
 3. Do-While Loop
 
-```shell
+```php
 <?php
 // Post-condition check (always executes at least once)
 $number = 1;
@@ -171,7 +171,7 @@ do {
 
 4. Foreach Loop
 
-```shell
+```php
 <?php
 // Iterating over arrays
 $fruits = ['apple', 'banana', 'orange'];
@@ -200,7 +200,7 @@ foreach ($numbers as &$number) {
 print_r($numbers); // [2, 4, 6]
 ```
 
-```shell
+```php
 <?php
 // Break - exit loop entirely
 for ($i = 0; $i < 10; $i++) {
@@ -236,7 +236,7 @@ for ($i = 0; $i < 3; $i++) {
 
 PHP offers alternative syntax for control structures, commonly used in templates:
 
-```shell
+```php
 <?php if ($isLoggedIn): ?>
     <h1>Welcome, <?= $username ?></h1>
 <?php else: ?>
@@ -260,7 +260,7 @@ PHP offers alternative syntax for control structures, commonly used in templates
 
 1. User Authentication
 
-```shell
+```php
 <?php
 $username = "admin";
 $password = "secret";
@@ -287,7 +287,7 @@ if (empty($username) || empty($password)) {
 
 2. Data Processing
 
-```shell
+```php
 <?php
 $users = [
     ['name' => 'Alice', 'age' => 25, 'active' => true],
@@ -316,7 +316,7 @@ foreach ($users as $user) {
 
 3. Menu System
 
-```shell
+```php
 <?php
 $choice = 2;
 
@@ -335,7 +335,7 @@ echo $result;
 
 Use meaningful condition names:
 
-```shell
+```php
 <?php
 // Instead of:
 if ($x > 5 && $y < 10) { }

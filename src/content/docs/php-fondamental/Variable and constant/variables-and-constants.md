@@ -11,7 +11,7 @@ PHP variables are declared with a $ sign followed by the variable name. They are
 
 **Basic variable declarations**
 
-```shell
+```php
 <?php
 
 $integer = 42;                    // Integer
@@ -49,7 +49,7 @@ Scope refers to the context where a variable is accessible. PHP has three main v
 **Global Scope**
 Variables declared outside any function or class have global scope.
 
-```shell
+```php
 <?php
 // Global variable
 $siteName = "MyPHPWebsite";
@@ -80,7 +80,7 @@ echo "Counter after function call: " . $counter . "\n";
 **Local Scope**
 Variables declared inside a function are local to that function.
 
-```shell
+```php
 <?php
 function calculateTotal() {
     // Local variables - only accessible inside this function
@@ -112,7 +112,7 @@ anotherFunction();
 **Static Scope**
 Static variables retain their value between function calls.
 
-```shell
+```php
 <?php
 function counter() {
     // Static variable - persists between calls
@@ -157,7 +157,7 @@ Constants are like variables but cannot be changed once defined.
 
 **Defining Constants**
 
-```shell
+```php
 <?php
 // Using define() function (runtime)
 define("SITE_NAME", "MyPHPWebsite");
@@ -189,7 +189,7 @@ if (defined("SITE_NAME")) {
 **Magic Constants**
 PHP provides several predefined constants that change based on where they're used.
 
-```shell
+```php
 <?php
 // Magic constants example
 echo "Current file: " . __FILE__ . "\n";
@@ -216,7 +216,7 @@ $obj->showConstants();
 **Class Scope Variables**
 Variables within classes have additional scope modifiers.
 
-```shell
+```php
 <?php
 class UserManager {
     // Class properties with different visibility
@@ -269,7 +269,7 @@ echo "Class constant: " . UserManager::MAX_LOGIN_ATTEMPTS . "\n";
 **Variable Variables**
 PHP allows dynamic variable names (use with caution).
 
-```shell
+```php
 <?php
 // Variable variables
 $varName = "message";
@@ -299,7 +299,7 @@ echo $email . "\n";
 **Variable References**
 References allow multiple variables to point to the same content.
 
-```shell
+```php
 <?php
 // References example
 $original = "Hello";
@@ -325,7 +325,7 @@ print_r($data); // [2, 4, 6]
 **Best Practices**
 Use meaningful variable names:
 
-```shell
+```php
 <?php
 // Instead of:
 $a = 25;

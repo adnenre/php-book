@@ -18,7 +18,7 @@ PHP has evolved significantly, adopting modern development practices that enhanc
 
 ### Version Management
 
-```bash
+```shell
 # Using phpbrew
 phpbrew install 8.1
 

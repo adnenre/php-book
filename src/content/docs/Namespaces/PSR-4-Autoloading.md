@@ -19,3 +19,7 @@ class HomeController {}
 ```
 
 Directory structure:
+
+src/
+└── Controllers/
+└── HomeController.php

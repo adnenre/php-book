@@ -23,7 +23,3 @@ fclose($file);
 - `w` – write (overwrite)
 - `a` – append
 - `r+` – read and write
-
-```
-
-```

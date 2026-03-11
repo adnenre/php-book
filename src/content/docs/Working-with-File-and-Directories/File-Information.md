@@ -15,7 +15,7 @@ Common functions include:
 
 ## Example
 
-````php
+```php
 echo filesize("example.txt");
 ```
 
@@ -24,4 +24,3 @@ echo filesize("example.txt");
 ```php
 echo filemtime("example.txt");
 ```
-````

@@ -18,7 +18,3 @@ Common directory functions include:
 ```php
 mkdir("uploads");
 ```
-
-```
-
-```

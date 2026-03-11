@@ -16,7 +16,3 @@ stream_filter_append($handle, "string.toupper");
 
 echo fread($handle, 1024);
 ```
-
-```
-
-```

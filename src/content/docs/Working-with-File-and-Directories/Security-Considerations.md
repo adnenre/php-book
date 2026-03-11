@@ -25,7 +25,3 @@ if (!in_array($extension, $allowed)) {
 die("Invalid file type");
 }
 ```
-
-```
-
-```

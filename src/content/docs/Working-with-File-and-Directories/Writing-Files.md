@@ -16,7 +16,3 @@ fwrite($file, "Hello World");
 
 fclose($file);
 ```
-
-```
-
-```

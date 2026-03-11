@@ -22,7 +22,3 @@ $context = stream_context_create($options);
 
 $content = file_get_contents("https://example.com", false, $context);
 ```
-
-```
-
-```

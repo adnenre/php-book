@@ -19,7 +19,3 @@ Common wrappers include:
 ```php
 $content = file_get_contents("php://memory");
 ```
-
-```
-
-```

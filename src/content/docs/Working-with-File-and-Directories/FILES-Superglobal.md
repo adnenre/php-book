@@ -20,7 +20,3 @@ Typical information includes:
 - `tmp_name`
 - `error`
 - `size`
-
-```
-
-```

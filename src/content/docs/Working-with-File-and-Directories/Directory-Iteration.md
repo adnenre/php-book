@@ -18,7 +18,3 @@ echo $file . PHP_EOL;
 
 closedir($dir);
 ```
-
-```
-
-```

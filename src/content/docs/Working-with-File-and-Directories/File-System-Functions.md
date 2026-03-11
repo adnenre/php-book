@@ -30,7 +30,3 @@ if (file_exists("example.txt")) {
 echo "File exists";
 }
 ```
-
-```
-
-```

@@ -14,7 +14,3 @@ $files = scandir(".");
 
 print_r($files);
 ```
-
-```
-
-```

@@ -20,7 +20,3 @@ rewind($handle);
 
 echo stream_get_contents($handle);
 ```
-
-```
-
-```

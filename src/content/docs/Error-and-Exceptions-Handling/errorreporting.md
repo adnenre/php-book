@@ -11,8 +11,5 @@ The `error_reporting()` function sets the level of errors reported.
 
 ```php
 error_reporting(E_ALL);
-```
-
-```
 
 ```

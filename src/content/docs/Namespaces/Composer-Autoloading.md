@@ -23,7 +23,3 @@ You configure it inside `composer.json`.
 ```
 
 After configuration run:
-
-```
-
-```

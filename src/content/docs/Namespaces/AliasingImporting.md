@@ -18,8 +18,5 @@ use Vendor\Auth\User as AuthUser;
 $appUser = new AppUser();
 $authUser = new AuthUser();
 
-```
-
-```
 
 ```

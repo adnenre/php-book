@@ -16,8 +16,5 @@ namespace App;
 
 $date = new \DateTime();
 
-```
-
-```
 
 ```

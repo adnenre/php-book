@@ -13,13 +13,9 @@ Namespaces can contain sub-namespaces for better organization.
 namespace App\Controllers\Admin;
 
 class DashboardController {
-public function index() {
-echo "Admin Dashboard";
+    public function index() {
+      echo "Admin Dashboard";
+    }
 }
-}
-
-```
-
-```
 
 ```

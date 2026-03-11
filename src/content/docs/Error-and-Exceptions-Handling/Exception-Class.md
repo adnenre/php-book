@@ -17,8 +17,5 @@ throw new Exception("Custom exception");
 } catch (Exception $e) {
 echo $e->getMessage();
 }
-```
-
-```
 
 ```

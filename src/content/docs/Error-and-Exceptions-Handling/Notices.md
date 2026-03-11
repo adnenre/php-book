@@ -11,8 +11,5 @@ Notices inform developers about minor issues.
 
 ```php
 echo $name;
-```
-
-```
 
 ```

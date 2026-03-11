@@ -19,8 +19,5 @@ try {
     echo "Cannot divide by zero";
 
 }
-```
-
-```
 
 ```

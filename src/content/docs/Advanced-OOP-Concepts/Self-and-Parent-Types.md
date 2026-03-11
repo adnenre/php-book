@@ -26,8 +26,5 @@ class Child extends Base {
 
 }
 
-```
-
-```
 
 ```

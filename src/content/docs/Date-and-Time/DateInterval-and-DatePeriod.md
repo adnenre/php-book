@@ -11,7 +11,7 @@ sidebar:
 
 ## DateInterval Example
 
-````php
+```php
 $date = new DateTime();
 
 $interval = new DateInterval("P5D");
@@ -33,5 +33,5 @@ $period = new DatePeriod($start, $interval, $end);
 foreach ($period as $date) {
 echo $date->format("Y-m-d") . PHP_EOL;
 }
+
 ```
-````

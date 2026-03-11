@@ -11,7 +11,7 @@ A Unix timestamp represents the number of seconds since January 1, 1970.
 
 ## Example
 
-````php
+```php
 echo time();
 ```
 
@@ -19,5 +19,5 @@ echo time();
 
 ```php
 echo date("Y-m-d H:i:s", time());
+
 ```
-````

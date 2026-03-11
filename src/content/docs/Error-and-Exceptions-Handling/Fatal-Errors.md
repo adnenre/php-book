@@ -13,8 +13,5 @@ They usually occur due to serious problems such as calling undefined functions.
 
 ```php
 undefinedFunction();
-```
-
-```
 
 ```

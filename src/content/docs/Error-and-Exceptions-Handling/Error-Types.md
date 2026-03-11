@@ -25,7 +25,3 @@ echo $undefinedVariable;
 ```
 
 This will generate a notice because the variable is not defined.
-
-```
-
-```

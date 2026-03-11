@@ -20,8 +20,5 @@ $timezone = new DateTimeZone("Europe/Paris");
 $date = new DateTime("now", $timezone);
 
 echo $date->format("Y-m-d H:i:s");
-```
-
-```
 
 ```

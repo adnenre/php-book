@@ -25,7 +25,3 @@ The array includes:
 - day
 - month
 - year
-
-```
-
-```

@@ -19,8 +19,5 @@ Order
 $user = new User();
 $product = new Product();
 
-```
-
-```
 
 ```

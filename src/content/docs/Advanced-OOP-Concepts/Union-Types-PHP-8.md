@@ -17,8 +17,5 @@ function formatNumber(int|float $number) {
 echo formatNumber(10);
 echo formatNumber(10.5);
 
-```
-
-```
 
 ```

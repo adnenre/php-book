@@ -25,8 +25,5 @@ checkAge(15);
 } catch (InvalidAgeException $e) {
 echo $e->getMessage();
 }
-```
-
-```
 
 ```

@@ -19,7 +19,3 @@ class HomeController {}
 ```
 
 Directory structure:
-
-```
-
-```

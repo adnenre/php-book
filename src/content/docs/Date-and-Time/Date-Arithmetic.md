@@ -9,7 +9,7 @@ Date arithmetic allows adding or subtracting time from a date.
 
 ## Adding days
 
-````php
+```php
 $date = new DateTime();
 
 $date->modify("+5 days");
@@ -22,4 +22,3 @@ echo $date->format("Y-m-d");
 ```php
 $date->modify("-1 month");
 ```
-````

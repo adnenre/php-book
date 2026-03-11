@@ -9,7 +9,7 @@ Dates can be formatted using the `format()` method of the DateTime class.
 
 ## Example
 
-````php
+```php
 $date = new DateTime();
 
 echo $date->format("Y-m-d");
@@ -20,5 +20,5 @@ echo $date->format("d/m/Y");
 
 ```php
 echo $date->format("Y-m-d H:i:s");
+
 ```
-````

@@ -23,8 +23,5 @@ try {
     echo "Cleanup executed";
 
 }
-```
-
-```
 
 ```

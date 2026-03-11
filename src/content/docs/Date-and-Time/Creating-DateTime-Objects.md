@@ -9,7 +9,7 @@ DateTime objects can be created using different formats.
 
 ## Current date and time
 
-````php
+```php
 $date = new DateTime();
 ```
 
@@ -23,5 +23,5 @@ $date = new DateTime("2025-06-10");
 
 ```php
 $date = new DateTime("now", new DateTimeZone("UTC"));
+
 ```
-````

@@ -20,8 +20,5 @@ throw new Exception("Example");
 } catch (Throwable $e) {
 echo $e->getMessage();
 }
-```
-
-```
 
 ```

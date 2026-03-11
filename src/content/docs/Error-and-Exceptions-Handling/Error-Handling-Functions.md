@@ -19,8 +19,5 @@ Common functions include:
 set_error_handler(function($errno, $errstr) {
 echo "Error: $errstr";
 });
-```
-
-```
 
 ```

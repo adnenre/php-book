@@ -19,8 +19,5 @@ try {
     echo $e->getMessage();
 
 }
-```
-
-```
 
 ```

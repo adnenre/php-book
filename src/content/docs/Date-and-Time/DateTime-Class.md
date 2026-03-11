@@ -9,7 +9,7 @@ The `DateTime` class provides an object-oriented interface for working with date
 
 ## Creating a DateTime Object
 
-````php
+```php
 $date = new DateTime();
 
 echo $date->format("Y-m-d H:i:s");
@@ -21,5 +21,5 @@ echo $date->format("Y-m-d H:i:s");
 $date = new DateTime("2025-01-01");
 
 echo $date->format("Y-m-d");
+
 ```
-````

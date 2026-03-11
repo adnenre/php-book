@@ -17,8 +17,5 @@ throw new Error("Something went wrong");
 } catch (Error $e) {
 echo $e->getMessage();
 }
-```
-
-```
 
 ```

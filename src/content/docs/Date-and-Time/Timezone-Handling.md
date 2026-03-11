@@ -9,7 +9,7 @@ Handling timezones is important when building global applications.
 
 ## Setting default timezone
 
-````php
+```php
 date_default_timezone_set("UTC");
 ```
 
@@ -25,5 +25,5 @@ echo $date->format("Y-m-d H:i:s");
 
 ```php
 $date->setTimezone(new DateTimeZone("America/New_York"));
+
 ```
-````

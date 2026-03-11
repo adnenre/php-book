@@ -21,8 +21,5 @@ class Calculator {
 $calc = new Calculator();
 echo $calc->add(2,3);
 
-```
-
-```
 
 ```

@@ -13,8 +13,5 @@ The script continues running.
 
 ```php
 include("missing_file.php");
-```
-
-```
 
 ```

@@ -9,7 +9,7 @@ The `date()` function formats a timestamp into a readable date string.
 
 ## Syntax
 
-````php
+```php
 date(string $format, ?int $timestamp = null);
 ```
 
@@ -30,4 +30,3 @@ echo date("d/m/Y");
 - `H` – Hour
 - `i` – Minutes
 - `s` – Seconds
-````

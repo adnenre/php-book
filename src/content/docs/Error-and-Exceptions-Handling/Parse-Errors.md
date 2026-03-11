@@ -12,8 +12,5 @@ Parse errors occur when PHP cannot understand the syntax of the code.
 ```php
 if ($a == 10
 echo "Missing parenthesis";
-```
-
-```
 
 ```

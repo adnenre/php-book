@@ -21,8 +21,5 @@ These functions allow developers to retrieve, format, and manipulate date values
 ```php
 echo date("Y-m-d");
 echo date("H:i:s");
-```
-
-```
 
 ```

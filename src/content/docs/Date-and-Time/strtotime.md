@@ -9,7 +9,7 @@ The `strtotime()` function converts a textual date into a Unix timestamp.
 
 ## Example
 
-````php
+```php
 $timestamp = strtotime("next Monday");
 
 echo date("Y-m-d", $timestamp);
@@ -19,5 +19,5 @@ echo date("Y-m-d", $timestamp);
 
 ```php
 echo strtotime("2025-01-01");
+
 ```
-````

@@ -27,8 +27,5 @@ echo divide(10,0);
 } catch (Exception $e) {
 echo $e->getMessage();
 }
-```
-
-```
 
 ```

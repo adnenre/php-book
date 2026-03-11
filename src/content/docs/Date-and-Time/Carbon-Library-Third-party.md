@@ -17,7 +17,7 @@ composer require nesbot/carbon
 
 ## Example
 
-````php
+```php
 use Carbon\Carbon;
 
 $date = Carbon::now();
@@ -30,4 +30,3 @@ echo $date->addDays(3);
 ```php
 echo Carbon::now()->format("Y-m-d H:i:s");
 ```
-````

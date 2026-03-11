@@ -11,8 +11,5 @@ PHP 8 allows `throw` to be used as an expression.
 
 ```php
 $value = $input ?? throw new Exception("Value required");
-```
-
-```
 
 ```

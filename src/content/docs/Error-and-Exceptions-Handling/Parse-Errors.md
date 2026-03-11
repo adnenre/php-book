@@ -9,7 +9,11 @@ Parse errors occur when PHP cannot understand the syntax of the code.
 
 ## Example
 
----php
+```php
 if ($a == 10
 echo "Missing parenthesis";
----phpend
+```
+
+```
+
+```

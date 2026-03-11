@@ -11,7 +11,7 @@ They allow programs to recover from errors.
 
 ## Example
 
----php
+```php
 function divide($a, $b) {
 
     if ($b == 0) {
@@ -27,4 +27,8 @@ echo divide(10,0);
 } catch (Exception $e) {
 echo $e->getMessage();
 }
----phpend
+```
+
+```
+
+```

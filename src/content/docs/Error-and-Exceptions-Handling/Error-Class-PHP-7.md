@@ -11,10 +11,14 @@ It allows developers to catch fatal errors using try-catch blocks.
 
 ## Example
 
----php
+```php
 try {
 throw new Error("Something went wrong");
 } catch (Error $e) {
 echo $e->getMessage();
 }
----phpend
+```
+
+```
+
+```

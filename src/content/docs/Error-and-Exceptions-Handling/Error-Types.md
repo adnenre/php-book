@@ -20,8 +20,12 @@ Understanding these error types helps developers debug applications more effecti
 
 ## Example
 
----php
+```php
 echo $undefinedVariable;
----phpend
+```
 
 This will generate a notice because the variable is not defined.
+
+```
+
+```

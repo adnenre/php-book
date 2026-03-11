@@ -9,6 +9,10 @@ Notices inform developers about minor issues.
 
 ## Example
 
----php
+```php
 echo $name;
----phpend
+```
+
+```
+
+```

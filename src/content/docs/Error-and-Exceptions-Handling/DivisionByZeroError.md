@@ -9,7 +9,7 @@ This error occurs when attempting to divide a number by zero.
 
 ## Example
 
----php
+```php
 try {
 
     echo intdiv(10,0);
@@ -19,4 +19,8 @@ try {
     echo "Cannot divide by zero";
 
 }
----phpend
+```
+
+```
+
+```

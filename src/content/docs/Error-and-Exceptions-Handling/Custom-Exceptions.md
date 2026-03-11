@@ -9,7 +9,7 @@ Developers can create custom exception classes by extending the `Exception` clas
 
 ## Example
 
----php
+```php
 class InvalidAgeException extends Exception {}
 
 function checkAge($age) {
@@ -25,4 +25,8 @@ checkAge(15);
 } catch (InvalidAgeException $e) {
 echo $e->getMessage();
 }
----phpend
+```
+
+```
+
+```

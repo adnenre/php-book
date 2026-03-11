@@ -11,10 +11,14 @@ It provides useful methods for debugging and handling errors.
 
 ## Example
 
----php
+```php
 try {
 throw new Exception("Custom exception");
 } catch (Exception $e) {
 echo $e->getMessage();
 }
----phpend
+```
+
+```
+
+```

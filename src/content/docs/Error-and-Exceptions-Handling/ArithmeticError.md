@@ -9,7 +9,7 @@ sidebar:
 
 ## Example
 
----php
+```php
 try {
 
     intdiv(PHP_INT_MIN, -1);
@@ -19,4 +19,8 @@ try {
     echo $e->getMessage();
 
 }
----phpend
+```
+
+```
+
+```

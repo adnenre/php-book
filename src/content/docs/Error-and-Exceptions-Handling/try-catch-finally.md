@@ -9,7 +9,7 @@ The `finally` block executes regardless of whether an exception occurs.
 
 ## Example
 
----php
+```php
 try {
 
     echo "Executing code";
@@ -23,4 +23,8 @@ try {
     echo "Cleanup executed";
 
 }
----phpend
+```
+
+```
+
+```

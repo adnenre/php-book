@@ -11,6 +11,10 @@ They usually occur due to serious problems such as calling undefined functions.
 
 ## Example
 
----php
+```php
 undefinedFunction();
----phpend
+```
+
+```
+
+```

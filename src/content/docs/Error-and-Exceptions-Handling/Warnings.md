@@ -11,6 +11,10 @@ The script continues running.
 
 ## Example
 
----php
+```php
 include("missing_file.php");
----phpend
+```
+
+```
+
+```

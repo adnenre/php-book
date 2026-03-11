@@ -15,8 +15,12 @@ Common functions include:
 
 ## Example
 
----php
+```php
 set_error_handler(function($errno, $errstr) {
 echo "Error: $errstr";
 });
----phpend
+```
+
+```
+
+```

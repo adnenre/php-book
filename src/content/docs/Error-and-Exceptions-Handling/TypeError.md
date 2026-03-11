@@ -9,10 +9,14 @@ sidebar:
 
 ## Example
 
----php
+```php
 function add(int $a, int $b) {
 return $a + $b;
 }
 
 add("hello",5);
----phpend
+```
+
+```
+
+```

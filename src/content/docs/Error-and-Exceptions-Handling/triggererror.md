@@ -9,6 +9,10 @@ The `trigger_error()` function generates a user-level error.
 
 ## Example
 
----php
+```php
 trigger_error("Custom warning", E_USER_WARNING);
----phpend
+```
+
+```
+
+```

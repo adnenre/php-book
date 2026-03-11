@@ -9,10 +9,14 @@ This function allows creating custom error handlers.
 
 ## Example
 
----php
+```php
 set_error_handler(function($errno, $errstr) {
 
     echo "Custom error: $errstr";
 
 });
----phpend
+```
+
+```
+
+```

@@ -9,7 +9,7 @@ Multiple catch blocks allow handling different exceptions separately.
 
 ## Example
 
----php
+```php
 try {
 
     throw new RuntimeException("Runtime error");
@@ -23,4 +23,8 @@ try {
     echo "Runtime problem";
 
 }
----phpend
+```
+
+```
+
+```

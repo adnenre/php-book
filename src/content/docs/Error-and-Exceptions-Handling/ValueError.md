@@ -9,7 +9,7 @@ sidebar:
 
 ## Example
 
----php
+```php
 try {
 
     strpos("Hello", "");
@@ -19,4 +19,8 @@ try {
     echo $e->getMessage();
 
 }
----phpend
+```
+
+```
+
+```

@@ -53,7 +53,7 @@ echo $dog->getBreathing() . PHP_EOL; // Output: Buddy is breathing
 $cat = new Cat("Whiskers");
 echo $cat->eat() . PHP_EOL;     // Output: Whiskers is eating
 echo $cat->meow() . PHP_EOL;    // Output: Whiskers is meowing
-?>
+
 
 ```
 
@@ -104,7 +104,7 @@ class Car extends Vehicle {
 $car = new Car("Toyota", 2024, "Camry");
 echo $car->start() . PHP_EOL;     // Output: Vehicle starting - Car engine roaring!
 echo $car->getInfo() . PHP_EOL;   // Output: Brand: Toyota, Year: 2024, Model: Camry
-?>
+
 
 ```
 
@@ -174,7 +174,7 @@ echo $paypal->process() . PHP_EOL;     // Output: Processing PayPal payment of $
 
 echo $payment->getFee() . PHP_EOL;    // Output: 2
 echo $creditCard->getFee() . PHP_EOL; // Output: 3
-?>
+
 ```
 
 ### final Keyword (method)
@@ -211,5 +211,5 @@ class AdvancedSecurity extends SecurityBase {
 $security = new AdvancedSecurity();
 echo $security->logAccess("John") . PHP_EOL;    // Output: User John accessed the system at [timestamp]
 echo $security->processData("secret") . PHP_EOL; // Output: ENCRYPTED_c2VjcmV0
-?>
+
 ```

@@ -25,7 +25,7 @@ class User {
 
 $user = new User("John", "john@test.com"); // Output: User object created for: John
 echo $user->name . PHP_EOL; // Output: John
-?>
+
 ```
 
 ### \_\_destruct()
@@ -51,5 +51,5 @@ class FileHandler {
 
 $handler = new FileHandler("test.txt"); // Output: File opened
 // When script ends or object is destroyed: File closed
-?>
+
 ```

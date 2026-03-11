@@ -34,7 +34,7 @@ echo $obj1->instanceId . PHP_EOL; // Output: 1
 echo $obj2->instanceId . PHP_EOL; // Output: 2
 echo $obj3->instanceId . PHP_EOL; // Output: 3
 echo Counter::getCount() . PHP_EOL; // Output: 3
-?>
+
 ```
 
 ### Static Method
@@ -67,7 +67,7 @@ echo MathUtils::factorial(5) . PHP_EOL; // Output: 120
 // Cannot use $this in static methods
 // $math = new MathUtils();
 // echo $math->add(5, 3); // Also works but not recommended
-?>
+
 ```
 
 ### Late Static Binding
@@ -104,5 +104,5 @@ ChildClass::test();
 // Output:
 // ParentClass
 // ChildClass
-?>
+
 ```

@@ -30,7 +30,7 @@ echo $car->brand . PHP_EOL;      // Output: Toyota (accessible outside)
 echo $car->start() . PHP_EOL;     // Output: Car started (accessible outside)
 $car->model = "Corolla";          // Can modify from outside
 echo $car->model . PHP_EOL;       // Output: Corolla
-?>
+
 ```
 
 ### protected
@@ -64,7 +64,7 @@ $parent = new ParentClass();
 $child = new ChildClass();
 echo $child->exposeData() . PHP_EOL; // Output: Protected data (through public method)
 // echo $child->childMethod(); // ERROR - cannot access protected method
-?>
+
 ```
 
 ### private
@@ -108,7 +108,7 @@ echo $account->addInterest() . PHP_EOL; // Output: 1050
 
 $savings = new SavingsAccount();
 echo $savings->tryAccessPrivate() . PHP_EOL; // Output: Cannot access parent's private members
-?>
+
 ```
 
 ### Readonly Properties (PHP 8.1+)
@@ -147,6 +147,6 @@ echo $user->name . PHP_EOL; // Output: John
 $config = new Config("localhost", 3306, "MyApp");
 echo $config->dbHost . PHP_EOL; // Output: localhost
 // $config->dbPort = 5432; // ERROR - readonly
-?>
+
 
 ```

@@ -82,5 +82,5 @@ $shallow2 = clone $shallow1; // No __clone - shallow copy
 
 $shallow2->engine->horsepower = 350; // This affects original!
 echo $shallow1->engine->horsepower . PHP_EOL; // Output: 350
-?>
+
 ```

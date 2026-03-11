@@ -38,7 +38,7 @@ next($numbers);
 echo current($numbers) . PHP_EOL; // Output: 20
 reset($numbers);
 echo current($numbers) . PHP_EOL; // Output: 10
-?>
+
 ```
 
 ### Adding Elements
@@ -74,7 +74,7 @@ $array1 = [1, 2];
 $array2 = [3, 4];
 $merged = array_merge($array1, $array2);
 print_r($merged); // Output: [1, 2, 3, 4]
-?>
+
 
 ```
 
@@ -112,7 +112,7 @@ $colors = ["red", "green", "blue", "green"];
 $key = array_search("green", $colors);
 unset($colors[$key]);
 print_r($colors); // Output: ["red", "blue", "green"]
-?>
+
 
 ```
 
@@ -155,5 +155,5 @@ foreach ($values as &$value) {
     $value += 5;
 }
 print_r($values); // Output: [15, 25, 35]
-?>
+
 ```

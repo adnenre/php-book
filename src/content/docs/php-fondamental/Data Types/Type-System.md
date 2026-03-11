@@ -56,7 +56,7 @@ function debug(mixed $value): void {
     echo gettype($value);
 }
 debug("hello"); // string
-?>
+
 ```
 
 ### Strict Types
@@ -101,7 +101,7 @@ function multiply(int $a, int $b): int {
 echo multiply(5, 3);     // 15
 echo multiply(5.5, 3);   // 15 (float converts to int)
 echo multiply("5", 3);   // 15 (string converts to int)
-?>
+
 ```
 
 ### Type Juggling
@@ -165,7 +165,7 @@ echo 5 * "3.5";      // 17.5 (string to float)
 echo 5 + true;       // 6 (true = 1)
 echo 5 + false;      // 5 (false = 0)
 echo "5" . 3;        // "53" (int to string)
-?>
+
 ```
 
 ### Type Casting
@@ -300,5 +300,5 @@ $enabled = (bool) $flag;     // true (non-empty string)
 // Float conversion for prices
 $price = "19.99";
 $amount = (float) $price;    // 19.99
-?>
+
 ```

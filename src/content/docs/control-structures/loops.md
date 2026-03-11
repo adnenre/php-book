@@ -60,7 +60,7 @@ while (true) {
         break;
     }
 }
-?>
+
 ```
 
 ## while in Templates
@@ -74,59 +74,59 @@ $items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
 $index = 0;
 $messages = ["Hello", "Hi", "Hey", "Greetings"];
 $msg_index = 0;
-?>
+
 
 <!-- Basic while loop -->
 <ul>
-    <?php $i = 1; ?>
-    <?php while ($i <= 5): ?>
-        <li>Item <?= $i ?></li>
-        <?php $i++; ?>
-    <?php endwhile; ?>
+    <?php $i = 1;
+    <?php while ($i <= 5):
+        <li>Item <?= $i </li>
+        <?php $i++;
+    <?php endwhile;
 </ul>
 
 <!-- While loop with array -->
 <select name="month">
-    <?php $month = 1; ?>
-    <?php while ($month <= 12): ?>
-        <option value="<?= $month ?>">Month <?= $month ?></option>
-        <?php $month++; ?>
-    <?php endwhile; ?>
+    <?php $month = 1;
+    <?php while ($month <= 12):
+        <option value="<?= $month ">Month <?= $month </option>
+        <?php $month++;
+    <?php endwhile;
 </select>
 
 <!-- While loop for pagination -->
 <div class="pagination">
-    <?php $page = 1; ?>
-    <?php while ($page <= 10): ?>
-        <a href="?page=<?= $page ?>" class="page-link"><?= $page ?></a>
-        <?php $page++; ?>
-    <?php endwhile; ?>
+    <?php $page = 1;
+    <?php while ($page <= 10):
+        <a href="?page=<?= $page " class="page-link"><?= $page </a>
+        <?php $page++;
+    <?php endwhile;
 </div>
 
 <!-- Nested while loops for tables -->
 <table border="1">
-    <?php $row = 1; ?>
-    <?php while ($row <= 3): ?>
+    <?php $row = 1;
+    <?php while ($row <= 3):
         <tr>
-            <?php $col = 1; ?>
-            <?php while ($col <= 4): ?>
-                <td>Row <?= $row ?>, Col <?= $col ?></td>
-                <?php $col++; ?>
-            <?php endwhile; ?>
+            <?php $col = 1;
+            <?php while ($col <= 4):
+                <td>Row <?= $row , Col <?= $col </td>
+                <?php $col++;
+            <?php endwhile;
         </tr>
-        <?php $row++; ?>
-    <?php endwhile; ?>
+        <?php $row++;
+    <?php endwhile;
 </table>
 
 <!-- While loop with conditional formatting -->
 <div class="message-list">
-    <?php $idx = 0; ?>
-    <?php while ($idx < count($messages)): ?>
-        <div class="message <?= $idx % 2 === 0 ? 'even' : 'odd' ?>">
-            <?= $messages[$idx] ?>
+    <?php $idx = 0;
+    <?php while ($idx < count($messages)):
+        <div class="message <?= $idx % 2 === 0 ? 'even' : 'odd' ">
+            <?= $messages[$idx]
         </div>
-        <?php $idx++; ?>
-    <?php endwhile; ?>
+        <?php $idx++;
+    <?php endwhile;
 </div>
 ```
 
@@ -173,7 +173,7 @@ do {
         case 3: echo "Deleting user...\n"; break;
     }
 } while ($choice != 4);
-?>
+
 ```
 
 ## do-while in Templates
@@ -185,32 +185,32 @@ $count = 1;
 $max = 3;
 $items = [];
 $show_once = true;
-?>
+
 
 <!-- Basic do-while (rare in templates, but possible) -->
-<?php $i = 0; ?>
-<?php do { ?>
+<?php $i = 0;
+<?php do {
     <p>This runs at least once</p>
-    <?php $i++; ?>
-<?php } while ($i < 3); ?>
+    <?php $i++;
+<?php } while ($i < 3);
 
 <!-- do-while for at least one item -->
 <div class="message-box">
-    <?php $has_messages = false; ?>
-    <?php do { ?>
+    <?php $has_messages = false;
+    <?php do {
         <div class="message">Default message</div>
-        <?php $has_messages = true; ?>
-    <?php } while ($has_messages === false); ?>
+        <?php $has_messages = true;
+    <?php } while ($has_messages === false);
 </div>
 
 <!-- do-while for form repopulation -->
 <form method="POST">
-    <?php $field_index = 0; ?>
-    <?php do { ?>
-        <input type="text" name="field_<?= $field_index ?>"
-               value="<?= $_POST['field_' . $field_index] ?? '' ?>">
-        <?php $field_index++; ?>
-    <?php } while ($field_index < 3); ?>
+    <?php $field_index = 0;
+    <?php do {
+        <input type="text" name="field_<?= $field_index "
+               value="<?= $_POST['field_' . $field_index] ?? '' ">
+        <?php $field_index++;
+    <?php } while ($field_index < 3);
 </form>
 ```
 
@@ -261,7 +261,7 @@ for ($i = 0; $i < 10; $i++) {
    }
    echo "Odd: $i\n";
 }
-?>
+
 ```
 
 ## for Loop in Templates
@@ -277,58 +277,58 @@ $products = [
 ];
 $start_year = 2020;
 $end_year = 2025;
-?>
+
 
 <!-- Basic for loop -->
 <ul>
-  <?php for ($i = 1; $i <= 5; $i++): ?>
-      <li>Item number <?= $i ?></li>
-  <?php endfor; ?>
+  <?php for ($i = 1; $i <= 5; $i++):
+      <li>Item number <?= $i </li>
+  <?php endfor;
 </ul>
 
 <!-- For loop for years dropdown -->
 <select name="year">
-  <?php for ($year = $start_year; $year <= $end_year; $year++): ?>
-      <option value="<?= $year ?>"><?= $year ?></option>
-  <?php endfor; ?>
+  <?php for ($year = $start_year; $year <= $end_year; $year++):
+      <option value="<?= $year "><?= $year </option>
+  <?php endfor;
 </select>
 
 <!-- For loop with step for hours -->
 <div class="time-slots">
-  <?php for ($hour = 9; $hour <= 17; $hour += 2): ?>
-      <div class="slot"><?= $hour ?>:00 - <?= $hour + 2 ?>:00</div>
-  <?php endfor; ?>
+  <?php for ($hour = 9; $hour <= 17; $hour += 2):
+      <div class="slot"><?= $hour :00 - <?= $hour + 2 :00</div>
+  <?php endfor;
 </div>
 
 <!-- For loop for star rating -->
 <div class="rating">
-  <?php $rating = 4; ?>
-  <?php for ($star = 1; $star <= 5; $star++): ?>
-      <span class="star <?= $star <= $rating ? 'filled' : 'empty' ?>">
-          <?= $star <= $rating ? '★' : '☆' ?>
+  <?php $rating = 4;
+  <?php for ($star = 1; $star <= 5; $star++):
+      <span class="star <?= $star <= $rating ? 'filled' : 'empty' ">
+          <?= $star <= $rating ? '★' : '☆'
       </span>
-  <?php endfor; ?>
+  <?php endfor;
 </div>
 
 <!-- Nested for loops for grid -->
 <table class="grid">
-  <?php for ($row = 0; $row < 3; $row++): ?>
+  <?php for ($row = 0; $row < 3; $row++):
       <tr>
-          <?php for ($col = 0; $col < 4; $col++): ?>
-              <td>Cell <?= $row + 1 ?>,<?= $col + 1 ?></td>
-          <?php endfor; ?>
+          <?php for ($col = 0; $col < 4; $col++):
+              <td>Cell <?= $row + 1 ,<?= $col + 1 </td>
+          <?php endfor;
       </tr>
-  <?php endfor; ?>
+  <?php endfor;
 </table>
 
 <!-- For loop with conditional classes -->
 <div class="product-grid">
-  <?php for ($i = 0; $i < count($products); $i++): ?>
-      <div class="product-card <?= $i % 2 === 0 ? 'featured' : 'regular' ?>">
-          <h3><?= $products[$i]['name'] ?></h3>
-          <p>$<?= $products[$i]['price'] ?></p>
+  <?php for ($i = 0; $i < count($products); $i++):
+      <div class="product-card <?= $i % 2 === 0 ? 'featured' : 'regular' ">
+          <h3><?= $products[$i]['name'] </h3>
+          <p>$<?= $products[$i]['price'] </p>
       </div>
-  <?php endfor; ?>
+  <?php endfor;
 </div>
 ```
 
@@ -407,7 +407,7 @@ foreach ($numbers as $num) {
   }
   echo "$num ";
 } // Output: 1 2 3 4 5
-?>
+
 ```
 
 ## foreach in Templates
@@ -443,21 +443,21 @@ $menu_items = [
 ];
 
 $current_page = "/about";
-?>
+
 
 <!-- Basic foreach loop -->
 <ul>
-    <?php foreach ($users as $user): ?>
-        <li><?= $user['name'] ?> (<?= $user['email'] ?>)</li>
-    <?php endforeach; ?>
+    <?php foreach ($users as $user):
+        <li><?= $user['name']  (<?= $user['email'] )</li>
+    <?php endforeach;
 </ul>
 
 <!-- Foreach with key and value -->
 <dl>
-    <?php foreach ($users[0] as $key => $value): ?>
-        <dt><?= ucfirst($key) ?></dt>
-        <dd><?= $value ?></dd>
-    <?php endforeach; ?>
+    <?php foreach ($users[0] as $key => $value):
+        <dt><?= ucfirst($key) </dt>
+        <dd><?= $value </dd>
+    <?php endforeach;
 </dl>
 
 <!-- Table with foreach -->
@@ -470,96 +470,96 @@ $current_page = "/about";
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($users as $user): ?>
-            <tr class="role-<?= $user['role'] ?>">
-                <td><?= $user['name'] ?></td>
-                <td><?= $user['email'] ?></td>
-                <td><?= ucfirst($user['role']) ?></td>
+        <?php foreach ($users as $user):
+            <tr class="role-<?= $user['role'] ">
+                <td><?= $user['name'] </td>
+                <td><?= $user['email'] </td>
+                <td><?= ucfirst($user['role']) </td>
             </tr>
-        <?php endforeach; ?>
+        <?php endforeach;
     </tbody>
 </table>
 
 <!-- Foreach with conditional formatting -->
 <div class="product-list">
-    <?php foreach ($products as $product): ?>
-        <div class="product <?= $product['in_stock'] ? 'in-stock' : 'out-of-stock' ?>">
-            <h3><?= $product['name'] ?></h3>
-            <p class="price">$<?= number_format($product['price'], 2) ?></p>
-            <?php if ($product['in_stock']): ?>
+    <?php foreach ($products as $product):
+        <div class="product <?= $product['in_stock'] ? 'in-stock' : 'out-of-stock' ">
+            <h3><?= $product['name'] </h3>
+            <p class="price">$<?= number_format($product['price'], 2) </p>
+            <?php if ($product['in_stock']):
                 <button class="buy-btn">Add to Cart</button>
-            <?php else: ?>
+            <?php else:
                 <button class="disabled" disabled>Out of Stock</button>
-            <?php endif; ?>
+            <?php endif;
         </div>
-    <?php endforeach; ?>
+    <?php endforeach;
 </div>
 
 <!-- Nested foreach loops -->
 <div class="categories">
-    <?php foreach ($categories as $category => $items): ?>
+    <?php foreach ($categories as $category => $items):
         <div class="category">
-            <h3><?= $category ?></h3>
+            <h3><?= $category </h3>
             <ul>
-                <?php foreach ($items as $item): ?>
-                    <li><?= $item ?></li>
-                <?php endforeach; ?>
+                <?php foreach ($items as $item):
+                    <li><?= $item </li>
+                <?php endforeach;
             </ul>
         </div>
-    <?php endforeach; ?>
+    <?php endforeach;
 </div>
 
 <!-- Foreach for navigation menu with active state -->
 <nav>
     <ul>
-        <?php foreach ($menu_items as $item): ?>
-            <li class="<?= $item['url'] === $current_page ? 'active' : '' ?>">
-                <a href="<?= $item['url'] ?>"><?= $item['text'] ?></a>
+        <?php foreach ($menu_items as $item):
+            <li class="<?= $item['url'] === $current_page ? 'active' : '' ">
+                <a href="<?= $item['url'] "><?= $item['text'] </a>
             </li>
-        <?php endforeach; ?>
+        <?php endforeach;
     </ul>
 </nav>
 
 <!-- Foreach with index -->
 <ol>
-    <?php $index = 1; ?>
-    <?php foreach ($users as $user): ?>
-        <li class="item-<?= $index ?>">
-            <?= $index ?>. <?= $user['name'] ?>
+    <?php $index = 1;
+    <?php foreach ($users as $user):
+        <li class="item-<?= $index ">
+            <?= $index . <?= $user['name']
         </li>
-        <?php $index++; ?>
-    <?php endforeach; ?>
+        <?php $index++;
+    <?php endforeach;
 </ol>
 
 <!-- Foreach with alternating row colors -->
 <table>
-    <?php $row_count = 0; ?>
-    <?php foreach ($users as $user): ?>
-        <tr class="<?= $row_count++ % 2 === 0 ? 'even' : 'odd' ?>">
-            <td><?= $user['name'] ?></td>
-            <td><?= $user['email'] ?></td>
+    <?php $row_count = 0;
+    <?php foreach ($users as $user):
+        <tr class="<?= $row_count++ % 2 === 0 ? 'even' : 'odd' ">
+            <td><?= $user['name'] </td>
+            <td><?= $user['email'] </td>
         </tr>
-    <?php endforeach; ?>
+    <?php endforeach;
 </table>
 
 <!-- Foreach for select dropdown -->
 <select name="user">
     <option value="">Select a user</option>
-    <?php foreach ($users as $user): ?>
-        <option value="<?= $user['id'] ?>">
-            <?= $user['name'] ?> (<?= $user['email'] ?>)
+    <?php foreach ($users as $user):
+        <option value="<?= $user['id'] ">
+            <?= $user['name']  (<?= $user['email'] )
         </option>
-    <?php endforeach; ?>
+    <?php endforeach;
 </select>
 
 <!-- Foreach with checkboxes -->
 <div class="checkbox-group">
-    <?php foreach ($products as $product): ?>
+    <?php foreach ($products as $product):
         <label>
-            <input type="checkbox" name="products[]" value="<?= $product['name'] ?>">
-            <?= $product['name'] ?> - $<?= $product['price'] ?>
+            <input type="checkbox" name="products[]" value="<?= $product['name'] ">
+            <?= $product['name']  - $<?= $product['price']
         </label><br>
-    <?php endforeach; ?>
+    <?php endforeach;
 </div>
 ```
 
@@ -646,7 +646,7 @@ foreach ($numbers as $num) {
   }
 }
 // Output: One 2 Three
-?>
+
 ```
 
 ## break and continue in Templates
@@ -656,57 +656,57 @@ foreach ($numbers as $num) {
 // Simple array for all examples
 $items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
 $matrix = [[1,2,3],[4,5,6],[7,8,9]];
-?>
+
 
 <!-- break - show first 3 items only -->
 <ul>
-    <?php $count = 0; ?>
-    <?php foreach ($items as $item): ?>
-        <?php if ($count >= 3) break; ?>
-        <li><?= $item ?></li>
-        <?php $count++; ?>
-    <?php endforeach; ?>
+    <?php $count = 0;
+    <?php foreach ($items as $item):
+        <?php if ($count >= 3) break;
+        <li><?= $item </li>
+        <?php $count++;
+    <?php endforeach;
 </ul>
 
 <!-- continue - skip even indices -->
 <ul>
-    <?php foreach ($items as $index => $item): ?>
-        <?php if ($index % 2 == 0) continue; ?>
-        <li><?= $item ?> (index <?= $index ?>)</li>
-    <?php endforeach; ?>
+    <?php foreach ($items as $index => $item):
+        <?php if ($index % 2 == 0) continue;
+        <li><?= $item  (index <?= $index )</li>
+    <?php endforeach;
 </ul>
 
 <!-- break when found -->
-<?php $search = "Item 3"; ?>
-<?php $found = false; ?>
-<?php foreach ($items as $item): ?>
-    <?php if ($item === $search): ?>
-        <p>Found: <?= $item ?></p>
-        <?php $found = true; ?>
-        <?php break; ?>
-    <?php endif; ?>
-<?php endforeach; ?>
-<?php if (!$found): ?>
+<?php $search = "Item 3";
+<?php $found = false;
+<?php foreach ($items as $item):
+    <?php if ($item === $search):
+        <p>Found: <?= $item </p>
+        <?php $found = true;
+        <?php break;
+    <?php endif;
+<?php endforeach;
+<?php if (!$found):
     <p>Not found</p>
-<?php endif; ?>
+<?php endif;
 
 <!-- break from nested loops -->
 <table border="1">
-    <?php $found = false; ?>
-    <?php foreach ($matrix as $row): ?>
+    <?php $found = false;
+    <?php foreach ($matrix as $row):
         <tr>
-            <?php foreach ($row as $cell): ?>
-                <td><?= $cell ?></td>
-                <?php if ($cell == 5): ?>
-                    <?php $found = true; ?>
-                    <?php break 2; ?>
-                <?php endif; ?>
-            <?php endforeach; ?>
+            <?php foreach ($row as $cell):
+                <td><?= $cell </td>
+                <?php if ($cell == 5):
+                    <?php $found = true;
+                    <?php break 2;
+                <?php endif;
+            <?php endforeach;
         </tr>
-    <?php endforeach; ?>
-    <?php if ($found): ?>
+    <?php endforeach;
+    <?php if ($found):
         <tr><td colspan="3">Found 5!</td></tr>
-    <?php endif; ?>
+    <?php endif;
 </table>
 ```
 

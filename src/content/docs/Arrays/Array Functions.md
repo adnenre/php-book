@@ -27,7 +27,7 @@ print_r($ages); // Output: ["Bob" => 20, "John" => 25, "Jane" => 30]
 
 ksort($ages); // Ascending sort by keys
 print_r($ages); // Output: ["Bob" => 20, "Jane" => 30, "John" => 25]
-?>
+
 ```
 
 ### Filtering Functions
@@ -57,7 +57,7 @@ $adults = array_filter($people, function($person) {
     return $person["age"] >= 18;
 });
 print_r($adults); // Output: [["name" => "John", "age" => 25], ["name" => "Bob", "age" => 30]]
-?>
+
 
 ```
 
@@ -86,7 +86,7 @@ print_r($capitalized); // Output: ["John", "Jane", "Bob"]
 // Multiply by 2
 $doubled = array_map(fn($n) => $n * 2, $numbers);
 print_r($doubled); // Output: [2, 4, 6, 8, 10] (PHP 7.4+ arrow functions)
-?>
+
 
 ```
 
@@ -124,7 +124,7 @@ $totalChars = array_reduce($words, function($carry, $word) {
     return $carry + strlen($word);
 }, 0);
 echo $totalChars . PHP_EOL; // Output: 11
-?>
+
 ```
 
 ### Searching Functions
@@ -156,7 +156,7 @@ if (array_key_exists("Jane", $ages)) {
 $numbers = [1, 2, 3, 2, 4, 2, 5];
 $keys = array_keys($numbers, 2);
 print_r($keys); // Output: [1, 3, 5]
-?>
+
 ```
 
 ### Slicing and Splicing
@@ -193,5 +193,5 @@ print_r($colors); // Output: ["red", "pink", "purple", "yellow"]
 $letters = ["a", "b", "e", "f"];
 array_splice($letters, 2, 0, ["c", "d"]);
 print_r($letters); // Output: ["a", "b", "c", "d", "e", "f"]
-?>
+
 ```

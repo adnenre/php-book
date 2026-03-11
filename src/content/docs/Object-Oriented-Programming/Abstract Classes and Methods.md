@@ -5,10 +5,17 @@ sidebar:
   label: 36. Abstract Classes and Methods
 ---
 
+```js {1,3-5} lineNumbers
+console.log("Hello?");
+console.log("Sorry, do you know what line I am on?");
+```
+
 ### Abstract Classes
 
-```php
 Classes that cannot be instantiated directly. They serve as base templates for other classes to extend from.
+
+```php {3}
+
 <?php
 // Abstract class - cannot be instantiated
 abstract class Animal {
@@ -38,14 +45,14 @@ class Dog extends Animal {
 $dog = new Dog("Buddy");
 $dog->eat(); // Output: Buddy is eating
 $dog->makeSound(); // Output: Buddy says: Woof!
-?>
+
 ```
 
 ### Abstract Mthods
 
 Methods declared in an abstract class without implementation. Any child class must provide an implementation for these methods.
 
-```php
+```php {10-11}
 <?php
 abstract class Shape {
     protected $color;
@@ -85,7 +92,7 @@ class Circle extends Shape {
 $circle = new Circle("red", 5);
 echo $circle->getArea() . PHP_EOL; // Output: 78.539816339745
 echo $circle->getColor() . PHP_EOL; // Output: red
-?>
+
 
 ```
 
@@ -93,7 +100,7 @@ echo $circle->getColor() . PHP_EOL; // Output: red
 
 Redefining a parent class method in a child class to provide specific functionality.
 
-```php
+```php showLineNumbers=true
 <?php
 class ParentClass {
     public function greet() {
@@ -123,7 +130,7 @@ $child = new ChildClass();
 echo $parent->greet() . PHP_EOL; // Output: Hello from parent
 echo $child->greet() . PHP_EOL; // Output: Hello from child
 echo $child->calculate(5, 3, 2) . PHP_EOL; // Output: 10
-?>
+
 ```
 
 ### final Keyword
@@ -159,5 +166,5 @@ class ChildClass extends ParentClass {
         return "Overridden version";
     }
 }
-?>
+
 ```

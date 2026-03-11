@@ -47,7 +47,7 @@ $minutes = 135;
 $hours = floor($minutes / 60);
 $remaining_minutes = $minutes % 60;
 echo "$minutes minutes = {$hours}h {$remaining_minutes}m\n"; // 2h 15m
-?>
+
 ```
 
 ### Assignment Operators
@@ -93,7 +93,7 @@ $cart_total += 29.99;  // Add item
 $cart_total += 49.99;  // Add another
 $cart_total -= 10;      // Apply discount
 echo "Cart total: \$$cart_total\n"; // $69.98
-?>
+
 ```
 
 ### Comparison Operators
@@ -149,7 +149,7 @@ echo "Apple" < "Banana"; // true (A comes before B)
 $value = null;
 if ($value == null) echo "Value is null\n";
 if ($value === null) echo "Value is strictly null\n";
-?>
+
 ```
 
 ### Increment/Decrement Operators
@@ -193,7 +193,7 @@ $index = 0;
 while ($index < count($fruits)) {
     echo $fruits[$index++] . "\n"; // Post-increment as index
 }
-?>
+
 ```
 
 ### Logical Operators
@@ -252,7 +252,7 @@ if ($email && $password) {  // Check if both exist
         echo "Valid login credentials\n";
     }
 }
-?>
+
 ```
 
 ### String Operators
@@ -296,7 +296,7 @@ $long_text = "This is a very long string that we " .
              "want to break across multiple lines " .
              "for better readability in code.";
 echo $long_text . "\n";
-?>
+
 ```
 
 ### Array Operators
@@ -350,7 +350,7 @@ print_r($config); // theme stays "light"
 $merged = array_merge($defaults, $user_prefs);
 echo "Array merge: ";
 print_r($merged); // theme becomes "dark"
-?>
+
 ```
 
 ### Null Coalescing Operator
@@ -419,7 +419,7 @@ echo "Bio: $bio\n"; // No bio available
 // Compare with ternary (requires isset check)
 $old_way = isset($_GET['user']) ? $_GET['user'] : 'guest';
 $new_way = $_GET['user'] ?? 'guest'; // Much cleaner!
-?>
+
 ```
 
 ### Spaceship Operator
@@ -496,7 +496,7 @@ echo "\nProducts sorted by category then price:\n";
 foreach ($products as $p) {
     echo "  {$p['category']}: \${$p['price']}\n";
 }
-?>
+
 ```
 
 ## Complete Operators Table

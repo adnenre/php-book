@@ -40,7 +40,7 @@ class User {
 
 $user = new User();
 echo $user->create("John") . PHP_EOL; // Output: [timestamp] User created: John
-?>
+
 ```
 
 ### Using Traits
@@ -89,7 +89,7 @@ echo $greeting->greet("John") . PHP_EOL; // Output: Hello, John!
 
 $calc = new Calculator();
 echo $calc->calculateAndGreet(5, 3, "John") . PHP_EOL; // Output: Hello John, sum is 8
-?>
+
 ```
 
 ### Trait Conflicts and Resolution
@@ -135,7 +135,7 @@ echo $speaker->sayHello() . PHP_EOL;      // Output: Hello from A
 echo $speaker->sayGoodbye() . PHP_EOL;     // Output: Goodbye from B
 echo $speaker->sayHelloFromB() . PHP_EOL;  // Output: Hello from B
 echo $speaker->sayGoodbyeFromA() . PHP_EOL; // Output: Goodbye from A
-?>
+
 ```
 
 ### Trait Composition
@@ -189,5 +189,5 @@ class Product {
 
 $product = new Product("Laptop", 1000);
 print_r($product->toArray()); // Output: Array with name and price
-?>
+
 ```

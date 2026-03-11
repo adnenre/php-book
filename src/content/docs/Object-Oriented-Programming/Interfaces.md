@@ -36,7 +36,7 @@ interface DatabaseConfig {
     public function connect();
     public function disconnect();
 }
-?>
+
 
 ```
 
@@ -83,7 +83,7 @@ class Circle implements Drawable {
 $circle = new Circle(5);
 echo $circle->draw() . PHP_EOL;    // Output: Drawing a circle with radius: 5
 echo $circle->getArea() . PHP_EOL;  // Output: 78.539816339745
-?>
+
 ```
 
 ### Multiple Interface Implementation
@@ -184,5 +184,5 @@ echo $handler->read() . PHP_EOL; // Output: Hello World
 $payment = new StripePayment();
 echo $payment->charge(100) . PHP_EOL; // Output: Charged: $100
 echo $payment->sendNotification("Payment successful") . PHP_EOL; // Output: SMS sent: Payment successful
-?>
+
 ```

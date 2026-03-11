@@ -20,34 +20,7 @@ class Car {
     // Class body goes here
 }
 
-// Class with properties and methods
-class Person {
-    public $name;
-    public $age;
 
-    public function sayHello() {
-        echo "Hello!";
-    }
-}
-
-// Abstract class
-abstract class Animal {
-    abstract public function makeSound();
-}
-
-// Final class (cannot be extended)
-final class MathUtils {
-    public static function add($a, $b) {
-        return $a + $b;
-    }
-}
-
-// Class with constants
-class Config {
-    const VERSION = "1.0.0";
-    const MAX_USERS = 100;
-}
-?>
 
 ```
 
@@ -92,7 +65,7 @@ var_dump($user); // Shows User object with name and email
 
 // Check if object is instance of class
 echo ($car1 instanceof Car) ? "Yes" : "No"; // Output: Yes
-?>
+
 
 ```
 
@@ -142,7 +115,7 @@ $product->setPrice(1000); // OK - using public method
 echo $product->getPrice(); // Output: 1000
 echo Product::$counter; // Access static property
 echo Product::CURRENCY; // Access constant
-?>
+
 
 ```
 
@@ -202,7 +175,7 @@ echo $calc->power(2, 3) . PHP_EOL; // Output: 8 (2³)
 echo Calculator::staticAdd(4, 5) . PHP_EOL; // Output: 9
 // echo $calc->multiply(3, 4); // ERROR - private method
 echo $calc->calculateArea(5, 3) . PHP_EOL; // Output: 15
-?>
+
 
 ```
 
@@ -295,7 +268,7 @@ echo $counter->increment()
              ->increment()
              ->decrement()
              ->getCount() . PHP_EOL; // Output: 1
-?>
+
 
 ```
 
@@ -374,5 +347,5 @@ $account->deposit(500)
 echo "Current balance: $" . $account->getBalance() . PHP_EOL; // Output: 1400
 print_r($account->getAccountInfo());
 echo BankAccount::getBankInfo() . PHP_EOL;
-?>
+
 ```

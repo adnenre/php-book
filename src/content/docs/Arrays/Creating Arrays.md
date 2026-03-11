@@ -36,7 +36,7 @@ echo $matrix[1][2] . PHP_EOL; // Output: 6
 // Specify keys
 $custom = array(0 => "zero", 2 => "two", 5 => "five");
 print_r($custom); // Output: [0=>"zero", 2=>"two", 5=>"five"]
-?>
+
 ```
 
 ### Short Array Syntax []
@@ -76,5 +76,5 @@ $users = [
     ["name" => "Jane", "email" => "jane@test.com"]
 ];
 echo $users[1]["name"] . PHP_EOL; // Output: Jane
-?>
+
 ```

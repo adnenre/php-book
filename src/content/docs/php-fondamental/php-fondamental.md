@@ -21,7 +21,7 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 <?php
     // PHP code goes here
     echo "Hello, World!";
-?>
+
 
 ```
 
@@ -31,13 +31,13 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 <?
     // PHP code (requires short_open_tag enabled in php.ini)
     echo "Short tag example";
-?>
+
 ```
 
 **Echo Tags**
 
 ```php
-<?= "This is shorthand for echo" ?>
+<?= "This is shorthand for echo"
 
 ```
 
@@ -51,7 +51,7 @@ PHP code is enclosed within special tags that tell the server to parse the conte
 %>
 ```
 
-Best Practice: Always use the standard <?php ?> tags for maximum compatibility across different server configurations.
+Best Practice: Always use the standard <?php tags for maximum compatibility across different server configurations.
 
 ## 3. Statements and Semicolons
 
@@ -64,7 +64,7 @@ PHP statements are instructions that perform actions. Each statement typically e
     echo "Hello World";  // Statement 1
     $name = "John";      // Statement 2
     echo $name;          // Statement 3
-?>
+
 
 ```
 
@@ -74,7 +74,7 @@ The semicolon marks the end of a statement
 
 Multiple statements can appear on one line (though not recommended for readability)
 
-The closing tag (?>) automatically implies a semicolon for the last statement
+The closing tag () automatically implies a semicolon for the last statement
 
 Forgetting semicolons causes parse errors
 
@@ -84,7 +84,7 @@ Example of Error:
 <?php
     echo "Hello"  // Missing semicolon - will cause error
     echo "World";
-?>
+
 ```
 
 ## 4. Comments
@@ -99,7 +99,7 @@ Comments are non-executable text that helps document code. PHP supports several 
     # This is also a single-line comment (shell style)
 
     echo "Hello"; // Comment after code
-?>
+
 ```
 
 **Multi-line Comments:**
@@ -118,7 +118,7 @@ Comments are non-executable text that helps document code. PHP supports several 
            return $result;
         */
     }
-?>
+
 ```
 
 **DocBlock Comments (for documentation):**
@@ -135,7 +135,7 @@ Comments are non-executable text that helps document code. PHP supports several 
     function add($a, $b) {
         return $a + $b;
     }
-?>
+
 ```
 
 ## 5. Variables and Constants
@@ -161,7 +161,7 @@ Variables in PHP start with a dollar sign ($) followed by the variable name.
     // Invalid variable names
     // $1stPlace = "first";  // Cannot start with number
     // $first-name = "test"; // Cannot use hyphens
-?>
+
 ```
 
 **Constants**
@@ -186,7 +186,7 @@ Constants are like variables but cannot be changed once defined.
     echo __LINE__;     // Current line number
     echo __FILE__;     // Full path and filename
     echo __DIR__;      // Directory of the file
-?>
+
 ```
 
 ## 6. Variable Scope
@@ -206,7 +206,7 @@ Variables declared within a function have local scope.
 
     testFunction();  // Outputs: I'm local
     // echo $localVar;  // Error: undefined variable
-?>
+
 ```
 
 **Global Scope**
@@ -229,7 +229,7 @@ Variables declared outside any function have global scope.
     }
 
     showGlobal();  // Outputs: I'm global
-?>
+
 ```
 
 **Static Scope**
@@ -249,7 +249,7 @@ Static variables retain their value between function calls.
     counter();  // Outputs: This function has been called 3 times
 
     // Each call remembers the previous value of $count
-?>
+
 
 ```
 
@@ -294,5 +294,5 @@ Static variables retain their value between function calls.
     echo "After function: $global<br>";  // Modified from inside function
     // echo $local;  // Error: undefined variable
     // echo $static; // Error: undefined variable
-?>
+
 ```

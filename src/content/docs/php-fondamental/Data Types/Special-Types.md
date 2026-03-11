@@ -35,7 +35,7 @@ var_dump($result); // NULL
 
 // 5. Unknown constants or properties
 var_dump($undefined_constant); // NULL (with warning)
-?>
+
 ```
 
 ### Checking for Null
@@ -72,7 +72,7 @@ var_dump(null == "");        // bool(true)  ⚠️ Pitfall!
 var_dump(null === 0);        // bool(false) ✅ Correct
 var_dump(null === false);    // bool(false) ✅ Correct
 var_dump(null === "");        // bool(false) ✅ Correct
-?>
+
 ```
 
 ### NULL Coalescing in Practice
@@ -110,7 +110,7 @@ function getConfig($key, $default = null) {
 
 echo getConfig('database')['host'] . "\n"; // localhost
 echo getConfig('cache', ['driver' => 'file'])['driver'] . "\n"; // file
-?>
+
 ```
 
 ### NULL vs Other Falsy Values
@@ -134,7 +134,7 @@ foreach ($values as $name => $value) {
     echo "empty(): " . (empty($value) ? 'true' : 'false') . "\n";
     echo "isset(): " . (isset($value) ? 'true' : 'false') . "\n";
 }
-?>
+
 ```
 
 ### Resource
@@ -180,5 +180,5 @@ xml_parser_free($parser);
 // 6. Stream contexts
 $context = stream_context_create();
 var_dump($context); // resource(8) of type (stream-context)
-?>
+
 ```

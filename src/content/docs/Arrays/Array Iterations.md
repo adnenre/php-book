@@ -32,7 +32,7 @@ foreach ($numbers as &$num) {
     $num *= 2;
 }
 print_r($numbers); // Output: [2, 4, 6]
-?>
+
 
 ```
 
@@ -62,7 +62,7 @@ echo $iterator->current() . PHP_EOL; // Output: Apple
 // Seek to position
 $iterator->seek(2);
 echo $iterator->current() . PHP_EOL; // Output: Orange
-?>
+
 
 ```
 
@@ -106,6 +106,6 @@ function getPerson() {
 foreach (getPerson() as $key => $value) {
     echo "$key: $value" . PHP_EOL; // Output: name: John age: 30 city: NYC
 }
-?>
+
 
 ```

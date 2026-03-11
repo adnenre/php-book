@@ -43,7 +43,7 @@ $car = array(
 );
 
 echo $car["brand"] . PHP_EOL; // Output: Toyota
-?>
+
 ```
 
 ### Multidimensional Arrays
@@ -89,5 +89,5 @@ $company = [
 
 echo $company["IT"][0]["name"] . PHP_EOL; // Output: John
 echo $company["IT"][1]["role"] . PHP_EOL; // Output: John
-?>
+
 ```

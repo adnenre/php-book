@@ -56,7 +56,7 @@ $product->title = "Laptop";
 $product->price = 1000;
 echo $product->title . PHP_EOL; // Output: Laptop
 echo $product->invalid . PHP_EOL; // Output: Property 'invalid' doesn't exist
-?>
+
 ```
 
 ### **isset() and **unset()
@@ -98,7 +98,7 @@ var_dump(isset($person->address)); // Output: Checking if 'address' is set, bool
 // Using __unset
 unset($person->age); // Output: Unsetting 'age'
 print_r($person->getData()); // Output: ['name' => 'John', 'email' => 'john@test.com']
-?>
+
 ```
 
 ### **call() and **callStatic()
@@ -140,7 +140,7 @@ echo $obj->sum(5, 3, 2) . PHP_EOL;     // Output: Calling method 'sum' with argu
 // Calling non-existent static methods
 echo DynamicMethods::multiply(2, 3, 4) . PHP_EOL; // Output: Calling static method 'multiply' with arguments: 2, 3, 4 \n 24
 echo DynamicMethods::unknown() . PHP_EOL; // Output: Calling static method 'unknown' with arguments:
-?>
+
 ```
 
 ### \_\_toString()
@@ -190,7 +190,7 @@ echo $product . PHP_EOL; // Output: Laptop - $999.99
 // Also works with string functions
 $userString = (string) $user;
 echo $userString . PHP_EOL; // Same output
-?>
+
 ```
 
 ### \_\_invoke()
@@ -247,7 +247,7 @@ $filter = new Filter(10, 20);
 $numbers = [5, 12, 18, 25, 9, 15];
 $filtered = array_filter($numbers, $filter); // Using object as callback
 print_r($filtered); // Output: [12, 18, 15]
-?>
+
 ```
 
 Magic method called when an object is cloned using the clone keyword. Allows control over what gets copied during cloning.
@@ -309,7 +309,7 @@ $simple2 = clone $simple1; // No __clone - shallow copy
 
 $simple2->address->street = "Changed Street"; // Modifies original!
 echo $simple1->address->street . PHP_EOL; // Output: Changed Street
-?>
+
 ```
 
 ### **sleep() and **wakeup()
@@ -366,7 +366,7 @@ echo "Serialized data length: " . strlen($serialized) . PHP_EOL;
 
 $unserialized = unserialize($serialized); // Triggers __wakeup
 // Output: Reconnecting after unserialization \n Connected to database
-?>
+
 ```
 
 ### **serialize() and **unserialize()
@@ -423,5 +423,5 @@ echo $serialized . PHP_EOL;
 
 $unserialized = unserialize($serialized);
 echo $unserialized->getInfo() . PHP_EOL;
-?>
+
 ```

@@ -34,7 +34,7 @@ var_dump(is_integer($age));    // bool(true)
 echo "PHP_INT_MAX: " . PHP_INT_MAX . "\n";     // Maximum integer size
 echo "PHP_INT_MIN: " . PHP_INT_MIN . "\n";     // Minimum integer size
 echo "PHP_INT_SIZE: " . PHP_INT_SIZE . " bytes\n";  // Integer size in bytes
-?>
+
 
 // Output
 
@@ -85,7 +85,7 @@ $inf = log(0);                    // log(0) is -INF
 
 var_dump(is_nan($nan));          // bool(true)
 var_dump(is_infinite($inf));     // bool(true)
-?>
+
 
 // Output
 Price: $19.99
@@ -162,7 +162,7 @@ $order = <<<HTML
 HTML;
 
 echo $order;
-?>
+
 
 // Output
 Hello John, you are 30 years old
@@ -256,7 +256,7 @@ echo "\nCasting to boolean:\n";
 echo "(bool) \$number: " . (bool)$number . "\n";     // 1 (true)
 echo "(bool) \$string: " . (bool)$string . "\n";     // 1 (true)
 echo "(bool) \$empty: " . (bool)$empty . "\n";       // 0 (false)
-?>
+
 
 // Output
 Is active: Yes

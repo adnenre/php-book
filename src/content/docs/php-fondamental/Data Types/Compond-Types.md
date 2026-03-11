@@ -41,7 +41,7 @@ foreach ($colors as $color) {
     echo $color . " ";
 }
 // Red Green Blue
-?>
+
 ```
 
 ### Object
@@ -94,7 +94,7 @@ class Person {
 
 $person = new Person("Alice");
 echo $person->greet(); // Hello, I'm Alice
-?>
+
 ```
 
 ### Callable
@@ -146,7 +146,7 @@ print_r($doubled); // [2, 4, 6, 8]
 
 // Check if callable
 var_dump(is_callable($add)); // bool(true)
-?>
+
 ```
 
 ### Iterable
@@ -226,5 +226,5 @@ function sum(iterable $values) {
 
 echo sum([1, 2, 3, 4, 5]); // 15
 echo sum(getRange(1, 5)); // 15 (same result with generator)
-?>
+
 ```

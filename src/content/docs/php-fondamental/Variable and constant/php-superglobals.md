@@ -29,7 +29,7 @@ if (isset($_GET['search'])) {
     $search_term = $_GET['search'];
     echo "Searching for: " . htmlspecialchars($search_term);
 }
-?>
+
 ```
 
 **Security Considerations:**
@@ -51,7 +51,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     // Handle error
     die("Invalid ID parameter");
 }
-?>
+
 ```
 
 **Example Form:**
@@ -78,7 +78,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
     $category = isset($_GET['category']) ? $_GET['category'] : 'all';
     echo "Search results for '$search' in category: $category";
 }
-?>
+
 
 2. $\_POST
    The $\_POST superglobal contains variables passed to the current script via HTTP POST method, typically from HTML forms.
@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Always check if array keys exist
 $age = isset($_POST['age']) ? $_POST['age'] : 'Not provided';
-?>
+
 ```
 
 **Security Best Practices:**
@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Never trust user input
     $clean_name = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
 }
-?>
+
 ```
 
 **Example Registration Form:**
@@ -162,14 +162,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Registration successful!";
     }
 }
-?>
+
 
 <form method="POST">
     <input type="text" name="username" placeholder="Username"
-           value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
+           value="<?= htmlspecialchars($_POST['username'] ?? '') ">
 
     <input type="email" name="email" placeholder="Email"
-           value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+           value="<?= htmlspecialchars($_POST['email'] ?? '') ">
 
     <input type="password" name="password" placeholder="Password">
     <input type="password" name="confirm_password" placeholder="Confirm Password">
@@ -178,15 +178,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </form>
 
-<?php if (!empty($errors)): ?>
+<?php if (!empty($errors)): 
 
     <div class="errors">
-        <?php foreach ($errors as $error): ?>
-            <p><?= htmlspecialchars($error) ?></p>
-        <?php endforeach; ?>
+        <?php foreach ($errors as $error): 
+            <p><?= htmlspecialchars($error) </p>
+        <?php endforeach; 
     </div>
 
-<?php endif; ?>
+<?php endif; 
 ```
 
 ### 3. $\_REQUEST
@@ -212,7 +212,7 @@ if (isset($_POST['key'])) {
 // request_order = "GP"  // GET then POST (default)
 // request_order = "PG"  // POST then GET
 // request_order = "GPC" // GET, POST, COOKIE
-?>
+
 ```
 
 **Warning:** Using $_REQUEST can lead to security issues and unexpected behavior. It's generally better to use the specific superglobal ($\_GET, $\_POST, or $\_COOKIE) to know exactly where the data is coming from.
@@ -247,7 +247,7 @@ unset($_SESSION['cart']);
 
 // Destroy entire session
 session_destroy();
-?>
+
 ```
 
 **Complete Login System Example:**
@@ -296,7 +296,7 @@ session_destroy();  // Destroy the session
 setcookie(session_name(), '', time() - 3600); // Delete session cookie
 header('Location: login.php');
 exit;
-?>
+
 ```
 
 **Session Security Tips:**
@@ -326,7 +326,7 @@ if (!isset($_SESSION['user_agent'])) {
     session_destroy();
     die("Security violation detected");
 }
-?>
+
 ```
 
 ### 5. $\_COOKIE
@@ -366,7 +366,7 @@ setcookie(
 
 // Delete a cookie
 setcookie("user", "", time() - 3600, "/");
-?>
+
 ```
 
 **Example: Remember Me Functionality:**
@@ -411,7 +411,7 @@ function checkRememberMe() {
     }
     return false;
 }
-?>
+
 ```
 
 ### 6. $\_SERVER
@@ -446,7 +446,7 @@ echo "Document Root: " . $_SERVER['DOCUMENT_ROOT'] . "<br>";
 echo "HTTPS: " . (isset($_SERVER['HTTPS']) ? 'Yes' : 'No') . "<br>";
 echo "HTTP Host: " . $_SERVER['HTTP_HOST'] . "<br>";
 echo "HTTP Referer: " . ($_SERVER['HTTP_REFERER'] ?? 'Not set') . "<br>";
-?>
+
 ```
 
 **Practical Examples:**
@@ -496,7 +496,7 @@ $allowed_hosts = ['example.com', 'www.example.com'];
 if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts, true)) {
     die("Invalid host");
 }
-?>
+
 ```
 
 ### 7. $\_ENV
@@ -521,7 +521,7 @@ $_ENV['APP_ENV'] = 'production';
 echo "Application Environment: " . ($_ENV['APP_ENV'] ?? 'development') . "<br>";
 echo "Path: " . ($_ENV['PATH'] ?? 'Not set') . "<br>";
 echo "Temporary Directory: " . ($_ENV['TMPDIR'] ?? sys_get_temp_dir()) . "<br>";
-?>
+
 ```
 
 **Using .env Files (with vlucas/phpdotenv):**
@@ -544,7 +544,7 @@ $debug = getenv('APP_DEBUG') === 'true';
 
 // Required variables
 $dotenv->required(['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS']);
-?>
+
 ```
 
 ### 8. $\_FILES
@@ -611,7 +611,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['avatar'])) {
         die("Failed to move uploaded file.");
     }
 }
-?>
+
 
 <form method="POST" enctype="multipart/form-data">
     <input type="file" name="avatar" accept="image/*">
@@ -643,7 +643,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_FILES['photos'])) {
     echo "Uploaded " . count($uploaded_files) . " files.";
 
 }
-?>
+
 
 <form method="POST" enctype="multipart/form-data">
     <input type="file" name="photos[]" multiple accept="image/*">
@@ -721,7 +721,7 @@ function handleFileUpload($field_name, $options = []) {
     return ['error' => 'Failed to save file'];
 
 }
-?>
+
 ```
 
 Security Considerations for All Superglobals
@@ -772,7 +772,7 @@ function validateInput($input, $type = 'string', $options = []) {
 $clean_email = validateInput($_POST['email'], 'email');
 $clean_age = validateInput($_POST['age'], 'int', ['min' => 1, 'max' => 120]);
 $clean_name = validateInput($_POST['name'], 'string', ['max_length' => 100]);
-?>
+
 ```
 
 **Remember**: Superglobals are powerful tools, but with great power comes great responsibility. Always validate, sanitize, and secure your data handling.

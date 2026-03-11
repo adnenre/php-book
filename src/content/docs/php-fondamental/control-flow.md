@@ -237,22 +237,22 @@ for ($i = 0; $i < 3; $i++) {
 PHP offers alternative syntax for control structures, commonly used in templates:
 
 ```php
-<?php if ($isLoggedIn): ?>
-    <h1>Welcome, <?= $username ?></h1>
-<?php else: ?>
+<?php if ($isLoggedIn):
+    <h1>Welcome, <?= $username </h1>
+<?php else:
     <h1>Please log in</h1>
-<?php endif; ?>
+<?php endif;
 
-<?php foreach ($users as $user): ?>
+<?php foreach ($users as $user):
     <div class="user">
-        <span><?= $user['name'] ?></span>
-        <span><?= $user['email'] ?></span>
+        <span><?= $user['name'] </span>
+        <span><?= $user['email'] </span>
     </div>
-<?php endforeach; ?>
+<?php endforeach;
 
-<?php for ($i = 0; $i < 5; $i++): ?>
-    <p>Item <?= $i + 1 ?></p>
-<?php endfor; ?>
+<?php for ($i = 0; $i < 5; $i++):
+    <p>Item <?= $i + 1 </p>
+<?php endfor;
 
 ```
 

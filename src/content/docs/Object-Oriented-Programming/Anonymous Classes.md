@@ -36,6 +36,6 @@ $person = new class("John", 30) {
 };
 
 echo $person->introduce() . PHP_EOL; // Output: I'm John, 30 years old
-?>
+
 
 ```

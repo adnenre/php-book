@@ -23,7 +23,7 @@ if ($age >= 18) {
 
 // Single line without braces (if only one statement)
 if ($age >= 18) echo "You are an adult.\n";
-?>
+
 ```
 
 ## if else statement
@@ -49,7 +49,7 @@ if ($is_logged_in) {
 } else {
     echo "Please log in to continue.\n";
 }
-?>
+
 ```
 
 ## if-elseif-else statement
@@ -81,7 +81,7 @@ echo "Grade: $grade - $message\n";
 // Output:
 // Score: 85
 // Grade: B - Good job!
-?>
+
 ```
 
 ## switch
@@ -111,7 +111,7 @@ switch ($day) {
 }
 
 // Output: Start of work week
-?>
+
 ```
 
 ## match Expression (PHP 8+)
@@ -142,6 +142,6 @@ $is_weekend = match($day) {
 };
 
 echo "$day is " . ($is_weekend ? 'weekend' : 'weekday') . "\n";
-?>
+
 
 ```

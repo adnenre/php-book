@@ -31,6 +31,6 @@ function getGreeting() {
 
 $message = getGreeting();
 echo $message; // Hello, World!
-?>
+
 
 ```

@@ -33,5 +33,5 @@ var_dump($person1 == $person4);  // Output: bool(false) - different attributes
 // === compares if they are the same instance
 var_dump($person1 === $person2); // Output: bool(false) - different instances
 var_dump($person1 === $person3); // Output: bool(true) - same instance
-?>
+
 ```

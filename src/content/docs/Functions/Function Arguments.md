@@ -15,7 +15,7 @@ function greet($name) {
     return "Hello, $name!";
 }
 echo greet("John"); // Hello, John!
-?>
+
 ```
 
 ### Optional Parameters
@@ -32,7 +32,7 @@ function greet($name, $prefix = null) {
 }
 echo greet("John");       // Hello, John!
 echo greet("John", "Mr."); // Hello, Mr. John!
-?>
+
 ```
 
 ### Default Values
@@ -46,7 +46,7 @@ function greet($name = "Guest") {
 }
 echo greet();      // Hello, Guest!
 echo greet("John"); // Hello, John!
-?>
+
 ```
 
 ### Variable-length Argument Lists
@@ -63,7 +63,7 @@ echo sum(1, 2, 3, 4, 5); // 15
 // Argument unpacking - spread array into arguments
 $nums = [1, 2, 3, 4, 5];
 echo sum(...$nums); // 15
-?>
+
 ```
 
 ### Named Arguments (PHP 8+)
@@ -79,5 +79,5 @@ function createUser($name, $age, $city = "Unknown") {
 // Named arguments (order doesn't matter)
 echo createUser(age: 30, name: "John", city: "NYC"); // John (30) from NYC
 echo createUser(name: "Jane", age: 25);              // Jane (25) from Unknown
-?>
+
 ```

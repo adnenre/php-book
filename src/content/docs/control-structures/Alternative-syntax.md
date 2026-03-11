@@ -28,89 +28,89 @@ $errors = [
     'email' => 'Email already exists',
     'password' => 'Password must be at least 8 characters'
 ];
-?>
+
 
 <!-- Basic if -->
-<?php if ($is_logged_in): ?>
+<?php if ($is_logged_in):
     <p>Welcome back!</p>
-<?php endif; ?>
+<?php endif;
 
 <!-- if-else -->
-<?php if ($is_logged_in): ?>
+<?php if ($is_logged_in):
     <a href="/logout">Logout</a>
-<?php else: ?>
+<?php else:
     <a href="/login">Login</a>
-<?php endif; ?>
+<?php endif;
 
 <!-- if-elseif-else -->
-<?php if ($role === 'admin'): ?>
+<?php if ($role === 'admin'):
     <a href="/admin">Admin Panel</a>
-<?php elseif ($role === 'editor'): ?>
+<?php elseif ($role === 'editor'):
     <a href="/editor">Editor Panel</a>
-<?php else: ?>
+<?php else:
     <a href="/profile">My Profile</a>
-<?php endif; ?>
+<?php endif;
 
 <!-- Nested conditions -->
 <div class="container">
-    <?php if ($user): ?>
-        <h1>Welcome, <?= $user['name'] ?>!</h1>
+    <?php if ($user):
+        <h1>Welcome, <?= $user['name'] !</h1>
 
-        <?php if ($user['posts']): ?>
+        <?php if ($user['posts']):
             <ul>
-                <?php foreach ($user['posts'] as $post): ?>
-                    <li><?= $post['title'] ?></li>
-                <?php endforeach; ?>
+                <?php foreach ($user['posts'] as $post):
+                    <li><?= $post['title'] </li>
+                <?php endforeach;
             </ul>
-        <?php else: ?>
+        <?php else:
             <p>No posts yet.</p>
-        <?php endif; ?>
+        <?php endif;
 
-    <?php else: ?>
+    <?php else:
         <p>Please log in.</p>
-    <?php endif; ?>
+    <?php endif;
 </div>
 
 <!-- Mixing HTML and conditions -->
 <div class="card">
     <h3>Product Title</h3>
 
-    <?php if ($on_sale): ?>
+    <?php if ($on_sale):
         <span class="badge">SALE</span>
-        <p class="price">$<?= $sale_price ?></p>
-        <p class="original">$<?= $regular_price ?></p>
-    <?php else: ?>
-        <p class="price">$<?= $regular_price ?></p>
-    <?php endif; ?>
+        <p class="price">$<?= $sale_price </p>
+        <p class="original">$<?= $regular_price </p>
+    <?php else:
+        <p class="price">$<?= $regular_price </p>
+    <?php endif;
 
-    <?php if ($in_stock && $quantity > 0): ?>
+    <?php if ($in_stock && $quantity > 0):
         <button>Add to Cart</button>
-        <?php if ($quantity < 5): ?>
-            <p class="low-stock">Only <?= $quantity ?> left!</p>
-        <?php endif; ?>
-    <?php else: ?>
+        <?php if ($quantity < 5):
+            <p class="low-stock">Only <?= $quantity  left!</p>
+        <?php endif;
+    <?php else:
         <button disabled>Out of Stock</button>
-    <?php endif; ?>
+    <?php endif;
 </div>
 
 <!-- Form validation example -->
 <form method="POST">
     <div class="field">
         <label>Email:</label>
-        <input type="email" name="email" value="<?= $_POST['email'] ?? '' ?>">
+        <input type="email" name="email" value="<?= $_POST['email'] ?? '' ">
 
-        <?php if (isset($errors['email'])): ?>
-            <span class="error"><?= $errors['email'] ?></span>
-        <?php endif; ?>
+        <?php if (isset($errors['email'])):
+            <span class="error"><?= $errors['email'] </span>
+        <?php endif;
     </div>
 
     <div class="field">
         <label>Password:</label>
         <input type="password" name="password">
 
-        <?php if (isset($errors['password'])): ?>
-            <span class="error"><?= $errors['password'] ?></span>
-        <?php endif; ?>
+        <?php if (isset($errors['password'])):
+            <span class="error"><?= $errors['password'] </span>
+        <?php endif;
     </div>
 
     <button type="submit">Register</button>
@@ -130,115 +130,115 @@ $images = ["/img/1.jpg", "/img/2.jpg", "/img/3.jpg"];
 $video_url = "/videos/intro.mp4";
 $status_code = 200;
 $role = "editor";
-?>
+
 
 <!-- Basic switch -->
 <?php switch ($day):
-    case 'Monday': ?>
+    case 'Monday':
         <p>Start of week</p>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 'Friday': ?>
+    <?php case 'Friday':
         <p>Last work day</p>
-        <?php break; ?>
+        <?php break;
 
     <?php case 'Saturday':
-    case 'Sunday': ?>
+    case 'Sunday':
         <p>Weekend!</p>
-        <?php break; ?>
+        <?php break;
 
-    <?php default: ?>
+    <?php default:
         <p>Mid week</p>
-<?php endswitch; ?>
+<?php endswitch;
 
 <!-- Content type example -->
 <?php switch ($content_type):
-    case 'article': ?>
+    case 'article':
         <article>
-            <h1><?= $title ?></h1>
-            <div class="content"><?= $body ?></div>
+            <h1><?= $title </h1>
+            <div class="content"><?= $body </div>
         </article>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 'gallery': ?>
+    <?php case 'gallery':
         <div class="gallery">
-            <h1><?= $title ?></h1>
-            <?php foreach ($images as $img): ?>
-                <img src="<?= $img ?>">
-            <?php endforeach; ?>
+            <h1><?= $title </h1>
+            <?php foreach ($images as $img):
+                <img src="<?= $img ">
+            <?php endforeach;
         </div>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 'video': ?>
+    <?php case 'video':
         <div class="video">
-            <h1><?= $title ?></h1>
-            <video src="<?= $video_url ?>" controls></video>
+            <h1><?= $title </h1>
+            <video src="<?= $video_url " controls></video>
         </div>
-        <?php break; ?>
+        <?php break;
 
-    <?php default: ?>
+    <?php default:
         <div class="default">
-            <h1><?= $title ?></h1>
-            <p><?= $body ?></p>
+            <h1><?= $title </h1>
+            <p><?= $body </p>
         </div>
-<?php endswitch; ?>
+<?php endswitch;
 
 <!-- HTTP status code example -->
 <?php switch ($status_code):
-    case 200: ?>
+    case 200:
         <div class="success">OK</div>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 201: ?>
+    <?php case 201:
         <div class="success">Created</div>
-        <?php break; ?>
+        <?php break;
 
     <?php case 400:
     case 401:
-    case 403: ?>
+    case 403:
         <div class="error">Access Error</div>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 404: ?>
+    <?php case 404:
         <div class="error">Not Found</div>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 500: ?>
+    <?php case 500:
         <div class="critical">Server Error</div>
-        <?php break; ?>
+        <?php break;
 
-    <?php default: ?>
-        <div class="info">Status: <?= $status_code ?></div>
-<?php endswitch; ?>
+    <?php default:
+        <div class="info">Status: <?= $status_code </div>
+<?php endswitch;
 
 <!-- User role layout -->
 <?php switch ($role):
-    case 'admin': ?>
+    case 'admin':
         <nav class="admin-nav">
             <a href="/admin/users">Users</a>
             <a href="/admin/settings">Settings</a>
             <a href="/admin/logs">Logs</a>
         </nav>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 'editor': ?>
+    <?php case 'editor':
         <nav class="editor-nav">
             <a href="/editor/posts">Posts</a>
             <a href="/editor/media">Media</a>
         </nav>
-        <?php break; ?>
+        <?php break;
 
-    <?php case 'subscriber': ?>
+    <?php case 'subscriber':
         <nav class="user-nav">
             <a href="/profile">Profile</a>
             <a href="/saved">Saved</a>
         </nav>
-        <?php break; ?>
+        <?php break;
 
-    <?php default: ?>
+    <?php default:
         <nav class="guest-nav">
             <a href="/login">Login</a>
             <a href="/register">Register</a>
         </nav>
-<?php endswitch; ?>
+<?php endswitch;
 ```

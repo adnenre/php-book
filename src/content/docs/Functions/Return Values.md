@@ -25,7 +25,7 @@ function getUser() {
 }
 $user = getUser();
 echo $user['name']; // John
-?>
+
 ```
 
 ### Returning References
@@ -44,7 +44,7 @@ $ref = &getColor($colors, 1); // Get reference to 'green'
 $ref = "yellow"; // Modifies the original array
 
 print_r($colors); // ["red", "yellow", "blue"]
-?>
+
 ```
 
 ### Void Return Type
@@ -68,7 +68,7 @@ function sendEmail($to, $subject): void {
     // Function completes without returning anything
 }
 sendEmail("john@example.com", "Welcome");
-?>
+
 ```
 
 ### Never Return Type (PHP 8.1+)
@@ -110,5 +110,5 @@ if (!isset($_SESSION['user'])) {
 // abort('Error'); // Would throw exception
 // dd($variable);  // Would dump and die
 // runForever();   // Would run infinitely
-?>
+
 ```

@@ -1,7 +1,18 @@
 ---
-title: set_error_handler()
+title: set_error_handler
 sidebar:
-  order: 75
-  label: 75. set_error_handler()
+  order: 88
+  label: 88. set_error_handler
 ---
 
+This function allows creating custom error handlers.
+
+## Example
+
+---php
+set_error_handler(function($errno, $errstr) {
+
+    echo "Custom error: $errstr";
+
+});
+---phpend

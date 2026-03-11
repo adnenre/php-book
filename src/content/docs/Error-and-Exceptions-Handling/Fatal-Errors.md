@@ -1,7 +1,16 @@
 ---
 title: Fatal Errors
 sidebar:
-  order: 70
-  label: 70. Fatal Errors
+  order: 76
+  label: 76. Fatal Errors
 ---
 
+Fatal errors stop the execution of a script.
+
+They usually occur due to serious problems such as calling undefined functions.
+
+## Example
+
+---php
+undefinedFunction();
+---phpend

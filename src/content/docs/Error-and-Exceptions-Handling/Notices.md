@@ -1,7 +1,14 @@
 ---
 title: Notices
 sidebar:
-  order: 72
-  label: 72. Notices
+  order: 78
+  label: 78. Notices
 ---
 
+Notices inform developers about minor issues.
+
+## Example
+
+---php
+echo $name;
+---phpend

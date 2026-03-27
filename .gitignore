@@ -4,6 +4,7 @@ dist/
 .astro/
 *.sh
 *.txt
+*.cjs
 # dependencies
 node_modules/
 
